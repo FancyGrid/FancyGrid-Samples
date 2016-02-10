@@ -1,4 +1,3 @@
-
 $(function(){
   $('#spline').highcharts({
     exporting: { enabled: false },
