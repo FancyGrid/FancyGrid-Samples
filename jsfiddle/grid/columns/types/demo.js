@@ -1,195 +1,72 @@
 $(function(){
-  $('#spline').highcharts({
-    exporting: { enabled: false },
-    tooltip: {
-      followPointer: true
-    },
-    chart: {
-      type: 'spline',
-      marginTop: 45,
-      marginRight: 20
-    },
-    title: {
-      text: 'Car production by largest manufacturers'
-    },
-    xAxis: {
-      categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014']
-    },
-    yAxis: {
-      //allowDecimals: false,
-      title: false
-    },
-    plotOptions: {
-      bar: {
-        stacking: 'percent'
-      }
-    },
-    series: [{
-      name: 'Toyota'
-    },{
-      name: 'GM'
-    },{
-      name: 'Volkswagen'
-    },{
-      name: 'Ford'
-    },{
-      name: 'Hyundai'
-    }]
-  });
-
-  $('#bar').highcharts({
-    exporting: { enabled: false },
-    tooltip: {
-      followPointer: true,
-      formatter: function(){
-        return this.series.name + ' in ' + this.key + ':' + this.percentage.toPrecision(4) + '%';
-      }
-    },
-    chart: {
-      type: 'bar',
-      marginTop: 45,
-      marginRight: 20
-    },
-    title: {
-      text: 'Car production by largest manufacturers'
-    },
-    xAxis: {
-      categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014']
-    },
-    yAxis: {
-      title: false
-    },
-    plotOptions: {
-      bar: {
-        stacking: 'percent'
-      }
-    },
-    series: [{
-      name: 'Toyota'
-    },{
-      name: 'GM'
-    },{
-      name: 'Volkswagen'
-    },{
-      name: 'Ford'
-    },{
-      name: 'Hyundai'
-    }]
-  });
-
-  $('#column').highcharts({
-    exporting: { enabled: false },
-    tooltip: {
-      followPointer: true,
-      formatter: function(){
-        return this.series.name + ' in ' + this.key + ':' + this.percentage.toPrecision(4) + '%';
-      }
-    },
-    chart: {
-      type: 'column',
-      marginTop: 45,
-      marginRight: 20
-    },
-    title: {
-      text: 'Car production by largest manufacturers'
-    },
-    xAxis: {
-      categories: ['2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014']
-    },
-    yAxis: {
-      //allowDecimals: false,
-      title: false
-    },
-    plotOptions: {
-      column: {
-        stacking: 'percent'
-      }
-    },
-    series: [{
-      name: 'Toyota'
-    },{
-      name: 'GM'
-    },{
-      name: 'Volkswagen'
-    },{
-      name: 'Ford'
-    },{
-      name: 'Hyundai'
-    }]
-  });
 
   var data = [
-    { year: 2006, toyota: 6800228, gm: 5779719, vw: 5429896, ford: 3956708, hyundai: 2003608 },
-    { year: 2007, toyota: 7211474, gm: 6259520, vw: 5964004, ford: 3565626, hyundai: 2292075 },
-    { year: 2008, toyota: 7768633, gm: 6015257, vw: 6110115, ford: 3346561, hyundai: 2435471 },
-    { year: 2009, toyota: 6148794, gm: 4997824, vw: 5902583, ford: 2952026, hyundai: 4222532 },
-    { year: 2010, toyota: 7267535, gm: 6266959, vw: 7120532, ford: 2958507, hyundai: 5247339 },
-    { year: 2011, toyota: 6793714, gm: 6494385, vw: 8157058, ford: 3093893, hyundai: 6118221 },
-    { year: 2012, toyota: 8381968, gm: 6608567, vw: 8576964, ford: 3123340, hyundai: 6761074 },
-    { year: 2013, toyota: 8565176, gm: 6733192, vw: 9259506, ford: 3317048, hyundai: 6909194 },
-    { year: 2014, toyota: 10230000, gm: 9920000, vw: 10140000, ford: 6320000, hyundai: 7710000 }
+    {id: 1, name: 'Ted', surname: 'Smith', position: 'Java Developer', email: 'ted.smith@gmail.com', company: 'Electrical Systems', age: 30, education: 'High School Of Cambridge', knownledge: 'Java, Ruby', married: true, country: 'USA'},
+    {id: 2, name: 'Ed', surname: 'Johnson', position: 'C/C++ Market Data Developer', email: 'ed.johnson@gmail.com', company: 'Energy and Oil', age: 35, education: 'High School Of Cambridge', knownledge: 'C++', married: true, country: 'Canada'},
+    {id: 3, name: 'Sam', surname: 'Williams', position: 'Technical Analyst', email: 'sam.williams@gmail.com', company: 'Airbus', age: 38, education: 'High School Of Cambridge', knownledge: '', married: true, country: 'England'},
+    {id: 4, name: 'Alexander', surname: 'Brown', position: 'Project Manager', email: 'alexander.brown@gmail.com', company: 'Renault', age: 24, education: 'High School Of Cambridge', knownledge: '', married: false, country: 'England'},
+    {id: 5, name: 'Nicholas', surname: 'Miller', position: 'Senior Software Engineer', email: 'nicholas.miller@gmail.com', company: 'Adobe', age: 33, education: 'High School Of Cambridge', knownledge: 'Unix, C/C++', married: true, country: 'Canada'},
+    {id: 6, name: 'Andrew', surname: 'Thompson', position: 'Agile Project Manager', email: 'andrew.thompson@gmail.com', company: 'Google', age: 28, education: 'High School Of Cambridge', knownledge: '', married: true, country: 'USA'},
+    {id: 7, name: 'Ryan', surname: 'Walker', position: 'Application Support Engineer', email: 'ryan.walker@gmail.com', company: 'Siemens', age: 39, education: 'High School Of Cambridge', knownledge: 'ActionScript', married: true, country: 'Canada'},
+    {id: 8, name: 'John', surname: 'Scott', position: 'Flex Developer', email: 'john.scott@gmail.com', company: 'Cargo', age: 45, education: 'High School Of Cambridge', knownledge: 'Flex', married: true, country: 'England'},
+    {id: 9, name: 'James', surname: 'Phillips', position: 'Senior C++/C# Developer', email: 'james.phillips@gmail.com', company: 'Pro bugs', age: 30, education: 'High School Of Cambridge', knownledge: 'C/C++, Unix', married: false, country: 'Canada'},
+    {id: 10, name: 'Brian', surname: 'Edwards', position: 'UNIX/C++ Developer', email: 'brian.edwards@gmail.com', company: 'IT Consultant', age: 23, education: 'High School Of Cambridge', knownledge: 'C/C++ Unix', married: true, country: 'England'},
+    {id: 11, name: 'Jack', surname: 'Richardson', position: 'Ruby Developer', email: 'jack.richardson@gmail.com', company: 'Europe IT', age: 24, education: 'High School Of Cambridge', knownledge: 'Ruby', married: true, country: 'Canada'},
+    {id: 12, name: 'Alex', surname: 'Howard', position: 'CSS3/HTML5 Developer', email: 'alex.howard@gmail.com', company: 'Cisco', age: 27, education: 'High School Of Cambridge', knownledge: 'CSS3/HTML5', married: true, country: ''},
+    {id: 13, name: 'Carlos', surname: 'Wood', position: 'Node.js Developer', email: 'carlos.wood@gmail.com', company: 'HP', age: 36, education: 'High School Of Cambridge', knownledge: 'Node.js', married: true, country: ''},
+    {id: 14, name: 'Adrian', surname: 'Russell', position: 'Frontend Developer', email: 'adrian.russell@gmail.com', company: 'Micro Systems', age: 31, education: 'High School Of Cambridge', knownledge: 'HTML, JavaScript', married: true, country: ''},
+    {id: 15, name: 'Jeremy', surname: 'Hamilton', position: 'Scala Developer', email: 'jeremy.hamilton@gmail.com', company: 'Big Machines', age: 30, education: 'High School Of Cambridge', knownledge: 'Scala', married: true, country: ''},
+    {id: 16, name: 'Ivan', surname: 'Woods', position: 'Objective C Developer', email: 'ivan.woods@gmail.com', company: '', age: 24, education: 'High School Of Cambridge', knownledge: 'Objective C', married: false, country: ''},
+    {id: 17, name: 'Peter', surname: 'West', position: 'PHP/HTML Developer', email: 'peters.west@gmail.com', company: 'Adobe', age: 26, education: 'High School Of Cambridge', knownledge: 'PHP/HTML', married: true, country: ''},
+    {id: 18, name: 'Scott', surname: 'Simpson', position: 'Designer', email: 'scott.simpson@gmail.com', company: 'IBM', age: 29, education: 'High School Of Cambridge', knownledge: 'Adobe PhotoShop', married: true, country: ''},
+    {id: 19, name: 'Lorenzo', surname: 'Tucker', position: 'Architect', email: 'lorenzo.tucker@gmail.com', company: 'Intel', age: 29, education: 'High School Of Cambridge', knownledge: '', married: true, country: ''},
+    {id: 20, name: 'Randy', surname: 'Grant', position: 'Engineer', email: 'randy.grant@gmail.com', company: 'Bridges', age: 30, education: 'High School Of Cambridge', knownledge: '', married: false, country: ''},
+    {id: 21, name: 'Arthur', surname: 'Gardner', position: 'Analytic', email: 'arthur.gardner@gmail.com', company: 'Google', age: 31, education: 'High School Of Cambridge', knownledge: '', married: true, country: ''},
+    {id: 22, name: 'Orlando', surname:'Ruiz', position: 'Unit Testing Developer', email: 'orlando.ruiz@gmail.com', company: 'Apple', age: 32, education: 'High School Of Cambridge', knownledge: '', married: true, country: ''}
   ];
 
   new FancyGrid({
-    renderTo: 'grid',
-    width: 651,
-    height: 350,
-    theme: 'blue',
-    data: {
-      items: data,
-      chart: [{
-        type: 'highchart',
-        id: 'spline',
-        fields: ['toyota', 'gm', 'vw', 'ford', 'hyundai']
-      },{
-        type: 'highchart',
-        id: 'bar',
-        fields: ['toyota', 'gm', 'vw', 'ford', 'hyundai']
-      },{
-        type: 'highchart',
-        id: 'column',
-        fields: ['toyota', 'gm', 'vw', 'ford', 'hyundai']
-      }]
-    },
+    title: '<img src="/img/logo_2.png" style="height:30px;position: relative;top:-7px;">',
+    width: 690,
+    height: 400,
+    data: data,
     defaults: {
-      type: 'number',
-      width: 95,
+      type: 'string',
+      width: 100,
       editable: true,
-      sortable: true,
-      resizable: true
+      sortable: true
     },
     clicksToEdit: 1,
     columns: [{
-      title: 'Year',
-      index: 'year',
+      index: 'id',
+      locked: true,
+      title: 'ID',
+      type: 'number',
       editable: false,
-      width: 55
+      width: 40
     },{
-      title: 'Toyota',
-      index: 'toyota'
+      index: 'company',
+      locked: true,
+      title: 'Company'
     },{
-      title: 'GM',
-      index: 'gm'
+      index: 'name',
+      title: 'Name'
     },{
-      title: 'VW',
-      index: 'vw'
+      index: 'surname',
+      title: 'Sur Name'
     },{
-      title: 'Ford',
-      index: 'ford'
+      index: 'country',
+      title: 'Country',
+      type: 'combo',
+      data: ['USA', 'Canada', 'England']
     },{
-      title: 'Hyundai',
-      index: 'hyundai'
+      index: 'age',
+      title: 'Age',
+      type: 'number'
     },{
-      width: 50,
-      type: 'sparklinepie',
-      sparkConfig: {
-        sliceColors: ["#9DB160", "#B26668", "#4091BA", "#8E658E", "#3B8D8B", "#B6CA79", "#CB7F81", "#4091BA", "#8E658E", "#3B8D8B"]
-      },
-      values: ['toyota', 'gm', 'vw', 'ford', 'hyundai']
-    },{
-      width: 50,
-      type: 'sparklinebar',
-      values: ['toyota', 'gm', 'vw', 'ford', 'hyundai']
+      index: 'married',
+      title: 'Married',
+      type: 'checkbox'
     }]
   });
 });
