@@ -26,7 +26,7 @@ $(function(){
   ];
 
   new FancyGrid({
-    title: '<img src="/img/logo_2.png" style="height:30px;position: relative;top:-7px;">',
+    title: '<img src="http://fancygrid.com/img/logo_2.png" style="height:30px;position: relative;top:-7px;">',
     width: 690,
     height: 400,
     data: data,
