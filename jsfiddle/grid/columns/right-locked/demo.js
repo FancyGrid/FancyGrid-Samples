@@ -200,8 +200,9 @@ var data = [{
   knownledge: ''
 }];
 
+
 new FancyGrid({
-  title: 'Locked Columns',
+  title: 'Right Locked Columns',
   renderTo: 'container',
   width: 800,
   height: 400,
@@ -230,7 +231,7 @@ new FancyGrid({
     index: 'education',
     locked: true,
     title: 'Education',
-    width: 150
+    width: 100
   },{
     index: 'knownledge',
     title: 'Knownledge',
@@ -238,7 +239,8 @@ new FancyGrid({
   },{
     index: 'position',
     title: 'Position',
-    width: 100
+    width: 170,
+    rightLocked: true
   }]
 });
 
