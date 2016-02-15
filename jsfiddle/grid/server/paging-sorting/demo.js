@@ -3,22 +3,25 @@
 */
 
 $(function() {
+
 new FancyGrid({
-  title: 'Load JSON file',
+  title: 'Server paging and sorting',
   renderTo: 'container',
   width: 700,
   height: 400,
   theme: 'blue',
   data: {
+    remoteSort: true,
     proxy: {
-      url: '/ajax/users.json'
+      url: '/ajax/ajax.php'
     }
   },
+  paging: true,
   defaults: {
     type: 'string',
     width: 100,
-    resizable: true,
-    sortable: true
+    sortable: true,
+    resizable: true
   },
   columns: [{
     index: 'company',
@@ -35,9 +38,9 @@ new FancyGrid({
     title: 'Age',
     type: 'number'
   },{
-    index: 'education',
+    index: 'position',
     locked: true,
-    title: 'Education',
+    title: 'Position',
     width: 150
   }]
 });
