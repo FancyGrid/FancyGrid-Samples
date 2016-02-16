@@ -201,7 +201,7 @@ var data = [{
 $(function() {
  
 new FancyGrid({
-  title: 'Paging',
+  title: 'Page Size',
   renderTo: 'container',
   width: 700,
   height: 400,

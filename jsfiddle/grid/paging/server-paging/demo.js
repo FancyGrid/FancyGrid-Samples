@@ -4,7 +4,7 @@
 
 $(function() {
  new FancyGrid({
-  title: 'Paging',
+  title: 'Server Paging and Sorting',
   renderTo: 'container',
   width: 700,
   height: 400,
