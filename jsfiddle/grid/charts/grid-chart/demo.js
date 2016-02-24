@@ -1,8 +1,5 @@
 $(function() {
   $('#column').highcharts({
-    exporting: {
-      enabled: false
-    },
     tooltip: {
       followPointer: true,
       formatter: function() {
@@ -154,19 +151,24 @@ $(function() {
       width: 55
     }, {
       title: 'Toyota',
-      index: 'toyota'
+      index: 'toyota',
+	  format: 'number'
     }, {
       title: 'GM',
-      index: 'gm'
+      index: 'gm',
+	  format: 'number'
     }, {
       title: 'VW',
-      index: 'vw'
+      index: 'vw',
+	  format: 'number'
     }, {
       title: 'Ford',
-      index: 'ford'
+      index: 'ford',
+	  format: 'number'
     }, {
       title: 'Hyundai',
-      index: 'hyundai'
+      index: 'hyundai',
+	  format: 'number'
     }, {
       width: 50,
       type: 'sparklinepie',
