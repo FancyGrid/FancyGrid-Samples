@@ -232,121 +232,49 @@ var grid = new FancyGrid({
   selModel: 'cells',
   tbar: [{
     text: 'Cell',
-    enableToggle: true,
+	toggleGroup: 'sel',
     handler: function(b) {
-      b.toggle();
-
-      grid.setSelection('cell', b.pressed);
-      grid.setSelection('cells', false);
-      grid.setSelection('row', false);
-      grid.setSelection('rows', false);
-      grid.setSelection('column', false);
-      grid.setSelection('columns', false);
-
-      grid.tbar[1].setPressed(false);
-      grid.tbar[2].setPressed(false);
-      grid.tbar[3].setPressed(false);
-      grid.tbar[4].setPressed(false);
-      grid.tbar[5].setPressed(false);
+	  b.setPressed(true);
+      grid.setSelModel('cell');
     }
   }, {
     text: 'Cells',
-    enableToggle: true,
+	toggleGroup: 'sel',
     pressed: true,
     style: {
       'margin-left': '5px'
     },
     handler: function(b) {
-      b.toggle();
-
-      grid.setSelection('cell', false);
-      grid.setSelection('cells', b.pressed);
-      grid.setSelection('row', false);
-      grid.setSelection('rows', false);
-      grid.setSelection('column', false);
-      grid.setSelection('columns', false);
-
-      grid.tbar[0].setPressed(false);
-      grid.tbar[2].setPressed(false);
-      grid.tbar[3].setPressed(false);
-      grid.tbar[4].setPressed(false);
-      grid.tbar[5].setPressed(false);
+      b.setPressed(true);
+      grid.setSelModel('cells');
     }
   }, {
     text: 'Column',
-    enableToggle: true,
+    toggleGroup: 'sel',
     handler: function(b) {
-      b.toggle();
-
-      grid.setSelection('cell', false);
-      grid.setSelection('cells', false);
-      grid.setSelection('row', false);
-      grid.setSelection('rows', false);
-      grid.setSelection('column', b.pressed);
-      grid.setSelection('columns', false);
-
-      grid.tbar[0].setPressed(false);
-      grid.tbar[1].setPressed(false);
-      grid.tbar[3].setPressed(false);
-      grid.tbar[4].setPressed(false);
-      grid.tbar[5].setPressed(false);
+      b.setPressed(true);
+      grid.setSelModel('column');
     }
   }, {
     text: 'Columns',
-    enableToggle: true,
+    toggleGroup: 'sel',
     handler: function(b) {
-      b.toggle();
-
-      grid.setSelection('cell', false);
-      grid.setSelection('cells', false);
-      grid.setSelection('row', false);
-      grid.setSelection('rows', false);
-      grid.setSelection('column', false);
-      grid.setSelection('columns', b.pressed);
-
-      grid.tbar[0].setPressed(false);
-      grid.tbar[1].setPressed(false);
-      grid.tbar[2].setPressed(false);
-      grid.tbar[4].setPressed(false);
-      grid.tbar[5].setPressed(false);
+      b.setPressed(true);
+      grid.setSelModel('columns');
     }
   }, {
     text: 'Row',
-    enableToggle: true,
+    toggleGroup: 'sel',
     handler: function(b) {
-      b.toggle();
-
-      grid.setSelection('cell', false);
-      grid.setSelection('cells', false);
-      grid.setSelection('row', b.pressed);
-      grid.setSelection('rows', false);
-      grid.setSelection('column', false);
-      grid.setSelection('columns', false);
-
-      grid.tbar[0].setPressed(false);
-      grid.tbar[1].setPressed(false);
-      grid.tbar[2].setPressed(false);
-      grid.tbar[3].setPressed(false);
-      grid.tbar[5].setPressed(false);
+      b.setPressed(true);
+      grid.setSelModel('row');
     }
   }, {
     text: 'Rows',
-    enableToggle: true,
+    toggleGroup: 'sel',
     handler: function(b) {
-      b.toggle();
-
-      grid.setSelection('cell', false);
-      grid.setSelection('cells', false);
-      grid.setSelection('row', false);
-      grid.setSelection('rows', b.pressed);
-      grid.setSelection('column', false);
-      grid.setSelection('columns', false);
-
-      grid.tbar[0].setPressed(false);
-      grid.tbar[1].setPressed(false);
-      grid.tbar[2].setPressed(false);
-      grid.tbar[3].setPressed(false);
-      grid.tbar[4].setPressed(false);
+      b.setPressed(true);
+      grid.setSelModel('rows');	  
     }
   }],
   defaults: {
