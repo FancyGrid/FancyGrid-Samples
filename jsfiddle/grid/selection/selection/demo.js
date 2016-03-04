@@ -221,7 +221,7 @@ var data = [{
 }];
 
 $(function() {
-
+  
 var grid = new FancyGrid({
   renderTo: 'container',
   title: 'Selection',
@@ -230,160 +230,159 @@ var grid = new FancyGrid({
   data: data,
   //Possible values: cell, cells, row, rows, column, columns
   selModel: 'cells',
-  debug: true,
   tbar: [{
-	text: 'Cell',
-	enableToggle: true,
-	handler: function(b) {
-	  b.toggle();
+    text: 'Cell',
+    enableToggle: true,
+    handler: function(b) {
+      b.toggle();
 
-	  grid.setSelection('cell', b.pressed);
-	  grid.setSelection('cells', false);
-	  grid.setSelection('row', false);
-	  grid.setSelection('rows', false);
-	  grid.setSelection('column', false);
-	  grid.setSelection('columns', false);
+      grid.setSelection('cell', b.pressed);
+      grid.setSelection('cells', false);
+      grid.setSelection('row', false);
+      grid.setSelection('rows', false);
+      grid.setSelection('column', false);
+      grid.setSelection('columns', false);
 
-	  grid.tbar[1].setPressed(false);
-	  grid.tbar[2].setPressed(false);
-	  grid.tbar[3].setPressed(false);
-	  grid.tbar[4].setPressed(false);
-	  grid.tbar[5].setPressed(false);
-	}
+      grid.tbar[1].setPressed(false);
+      grid.tbar[2].setPressed(false);
+      grid.tbar[3].setPressed(false);
+      grid.tbar[4].setPressed(false);
+      grid.tbar[5].setPressed(false);
+    }
   }, {
-	text: 'Cells',
-	enableToggle: true,
-	pressed: true,
-	style: {
-	  'margin-left': '5px'
-	},
-	handler: function(b) {
-	  b.toggle();
+    text: 'Cells',
+    enableToggle: true,
+    pressed: true,
+    style: {
+      'margin-left': '5px'
+    },
+    handler: function(b) {
+      b.toggle();
 
-	  grid.setSelection('cell', false);
-	  grid.setSelection('cells', b.pressed);
-	  grid.setSelection('row', false);
-	  grid.setSelection('rows', false);
-	  grid.setSelection('column', false);
-	  grid.setSelection('columns', false);
+      grid.setSelection('cell', false);
+      grid.setSelection('cells', b.pressed);
+      grid.setSelection('row', false);
+      grid.setSelection('rows', false);
+      grid.setSelection('column', false);
+      grid.setSelection('columns', false);
 
-	  grid.tbar[0].setPressed(false);
-	  grid.tbar[2].setPressed(false);
-	  grid.tbar[3].setPressed(false);
-	  grid.tbar[4].setPressed(false);
-	  grid.tbar[5].setPressed(false);
-	}
+      grid.tbar[0].setPressed(false);
+      grid.tbar[2].setPressed(false);
+      grid.tbar[3].setPressed(false);
+      grid.tbar[4].setPressed(false);
+      grid.tbar[5].setPressed(false);
+    }
   }, {
-	text: 'Column',
-	enableToggle: true,
-	handler: function(b) {
-	  b.toggle();
+    text: 'Column',
+    enableToggle: true,
+    handler: function(b) {
+      b.toggle();
 
-	  grid.setSelection('cell', false);
-	  grid.setSelection('cells', false);
-	  grid.setSelection('row', false);
-	  grid.setSelection('rows', false);
-	  grid.setSelection('column', b.pressed);
-	  grid.setSelection('columns', false);
+      grid.setSelection('cell', false);
+      grid.setSelection('cells', false);
+      grid.setSelection('row', false);
+      grid.setSelection('rows', false);
+      grid.setSelection('column', b.pressed);
+      grid.setSelection('columns', false);
 
-	  grid.tbar[0].setPressed(false);
-	  grid.tbar[1].setPressed(false);
-	  grid.tbar[3].setPressed(false);
-	  grid.tbar[4].setPressed(false);
-	  grid.tbar[5].setPressed(false);
-	}
+      grid.tbar[0].setPressed(false);
+      grid.tbar[1].setPressed(false);
+      grid.tbar[3].setPressed(false);
+      grid.tbar[4].setPressed(false);
+      grid.tbar[5].setPressed(false);
+    }
   }, {
-	text: 'Columns',
-	enableToggle: true,
-	handler: function(b) {
-	  b.toggle();
+    text: 'Columns',
+    enableToggle: true,
+    handler: function(b) {
+      b.toggle();
 
-	  grid.setSelection('cell', false);
-	  grid.setSelection('cells', false);
-	  grid.setSelection('row', false);
-	  grid.setSelection('rows', false);
-	  grid.setSelection('column', false);
-	  grid.setSelection('columns', b.pressed);
+      grid.setSelection('cell', false);
+      grid.setSelection('cells', false);
+      grid.setSelection('row', false);
+      grid.setSelection('rows', false);
+      grid.setSelection('column', false);
+      grid.setSelection('columns', b.pressed);
 
-	  grid.tbar[0].setPressed(false);
-	  grid.tbar[1].setPressed(false);
-	  grid.tbar[2].setPressed(false);
-	  grid.tbar[4].setPressed(false);
-	  grid.tbar[5].setPressed(false);
-	}
+      grid.tbar[0].setPressed(false);
+      grid.tbar[1].setPressed(false);
+      grid.tbar[2].setPressed(false);
+      grid.tbar[4].setPressed(false);
+      grid.tbar[5].setPressed(false);
+    }
   }, {
-	text: 'Row',
-	enableToggle: true,
-	handler: function(b) {
-	  b.toggle();
+    text: 'Row',
+    enableToggle: true,
+    handler: function(b) {
+      b.toggle();
 
-	  grid.setSelection('cell', false);
-	  grid.setSelection('cells', false);
-	  grid.setSelection('row', b.pressed);
-	  grid.setSelection('rows', false);
-	  grid.setSelection('column', false);
-	  grid.setSelection('columns', false);
+      grid.setSelection('cell', false);
+      grid.setSelection('cells', false);
+      grid.setSelection('row', b.pressed);
+      grid.setSelection('rows', false);
+      grid.setSelection('column', false);
+      grid.setSelection('columns', false);
 
-	  grid.tbar[0].setPressed(false);
-	  grid.tbar[1].setPressed(false);
-	  grid.tbar[2].setPressed(false);
-	  grid.tbar[3].setPressed(false);
-	  grid.tbar[5].setPressed(false);
-	}
+      grid.tbar[0].setPressed(false);
+      grid.tbar[1].setPressed(false);
+      grid.tbar[2].setPressed(false);
+      grid.tbar[3].setPressed(false);
+      grid.tbar[5].setPressed(false);
+    }
   }, {
-	text: 'Rows',
-	enableToggle: true,
-	handler: function(b) {
-	  b.toggle();
+    text: 'Rows',
+    enableToggle: true,
+    handler: function(b) {
+      b.toggle();
 
-	  grid.setSelection('cell', false);
-	  grid.setSelection('cells', false);
-	  grid.setSelection('row', false);
-	  grid.setSelection('rows', b.pressed);
-	  grid.setSelection('column', false);
-	  grid.setSelection('columns', false);
+      grid.setSelection('cell', false);
+      grid.setSelection('cells', false);
+      grid.setSelection('row', false);
+      grid.setSelection('rows', b.pressed);
+      grid.setSelection('column', false);
+      grid.setSelection('columns', false);
 
-	  grid.tbar[0].setPressed(false);
-	  grid.tbar[1].setPressed(false);
-	  grid.tbar[2].setPressed(false);
-	  grid.tbar[3].setPressed(false);
-	  grid.tbar[4].setPressed(false);
-	}
+      grid.tbar[0].setPressed(false);
+      grid.tbar[1].setPressed(false);
+      grid.tbar[2].setPressed(false);
+      grid.tbar[3].setPressed(false);
+      grid.tbar[4].setPressed(false);
+    }
   }],
   defaults: {
-	type: 'string',
-	width: 100,
-	sortable: true,
-	resizable: true
+  type: 'string',
+  width: 100,
+  sortable: true,
+  resizable: true
   },
   columns: [{
-	index: 'id',
-	title: 'Id',
-	locked: true,
-	width: 50,
-	type: 'number'
+  index: 'id',
+  title: 'Id',
+  locked: true,
+  width: 50,
+  type: 'number'
   }, {
-	index: 'company',
-	title: 'Company'
+  index: 'company',
+  title: 'Company'
   }, {
-	index: 'name',
-	title: 'Name'
+  index: 'name',
+  title: 'Name'
   }, {
-	index: 'surname',
-	title: 'Sur Name'
+  index: 'surname',
+  title: 'Sur Name'
   }, {
-	index: 'age',
-	title: 'Age',
-	type: 'number'
+  index: 'age',
+  title: 'Age',
+  type: 'number'
   }, {
-	index: 'knownledge',
-	title: 'Knownledge',
-	width: 100
+  index: 'knownledge',
+  title: 'Knownledge',
+  width: 100
   }, {
-	index: 'position',
-	title: 'Position',
-	rightLocked: true,
-	width: 100
+  index: 'position',
+  title: 'Position',
+  rightLocked: true,
+  width: 100
   }]
 });
 
