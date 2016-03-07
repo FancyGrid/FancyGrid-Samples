@@ -1,0 +1,16 @@
+.flag img {
+  border: 1px solid #dddddd;
+}
+
+.flag .fancy-grid-cell {
+  border-right-width: 0px;
+}
+
+.online .bar {
+  background-color: #7fb5e4;
+  background-color: #60B3E2;
+}
+
+.fancy-panel .fancy-panel-header-text {
+  padding-top: 11px;
+}
