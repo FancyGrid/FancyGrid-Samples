@@ -224,26 +224,21 @@ new FancyGrid({
     resizable: true
   },
   paging: true,
-	columns: [{
-		index: 'company',
-		locked: true,
-		title: 'Company'
-	},{
-		index: 'name',
-		title: 'Name'
-	},{
-		index: 'surname',
-		title: 'Sur Name'
-	},{
-		index: 'age',
-		title: 'Age',
+  columns: [{
+    index: 'company',
+    locked: true,
+    title: 'Firma '
+  },{
+    index: 'name',
+    title: 'Name'
+  },{
+    index: 'surname',
+    title: 'Nachname'
+  },{
+    index: 'age',
+    title: 'Alter',
     type: 'number'
-	},{
-		index: 'education',
-		locked: true,
-		title: 'Education',
-		width: 150
-	}]
+  }]
 });
 
 });
