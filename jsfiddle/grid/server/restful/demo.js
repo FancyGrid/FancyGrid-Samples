@@ -10,6 +10,8 @@ new FancyGrid({
   width: 700,
   height: 400,
   theme: 'blue',
+  trackOver: true,
+  selModel: 'rows',
   data: {
     proxy: {
       type: 'rest',
@@ -31,9 +33,7 @@ new FancyGrid({
   }, {
     type: 'button',
     text: 'Delete',
-    handler: function() {
-      console.log('delete');
-    }
+    action: 'remove'
   }],
   columns: [{
     index: 'id',
