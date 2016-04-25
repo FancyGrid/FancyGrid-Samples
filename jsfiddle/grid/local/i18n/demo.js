@@ -1,3 +1,4 @@
+$(function(){
 
 var gridUsers;
 
@@ -234,3 +235,5 @@ renderUsersGrid('Deutsch', 'de');
   });
 
 })();
+
+});
