@@ -241,9 +241,6 @@ var grid = new FancyGrid({
     text: 'Cells',
 	toggleGroup: 'sel',
     pressed: true,
-    style: {
-      'margin-left': '5px'
-    },
     handler: function(b) {
       b.setPressed(true);
       grid.setSelModel('cells');

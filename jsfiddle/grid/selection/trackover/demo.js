@@ -219,9 +219,6 @@ var grid = new FancyGrid({
     }
   },{
     text: 'Column',
-    style: {
-      'margin-left': '5px'
-    },
     enableToggle: true,
     handler: function(b){
       b.toggle();
