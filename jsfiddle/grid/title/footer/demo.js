@@ -1,116 +1,116 @@
 var data = [{
   rank: 1,
-  flag: 'fancygrid.com/dashboards//iots/img/SouthKorea.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/SouthKorea.png',
   country: 'South Korea',
   online: 37.9
 }, {
   rank: 2,
-  flag: 'fancygrid.com/dashboards//iots/img/Denmark.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Denmark.png',
   country: 'Denmark',
   online: 32.7
 }, {
   rank: 3,
-  flag: 'fancygrid.com/dashboards//iots/img/Switzerland.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Switzerland.png',
   country: 'Switzerland',
   online: 29.0
 }, {
   rank: 4,
-  flag: 'fancygrid.com/dashboards//iots/img/USA.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/USA.png',
   country: 'United States',
   online: 24.9
 }, {
   rank: 5,
-  flag: 'fancygrid.com/dashboards//iots/img/Netherlands.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Netherlands.png',
   country: 'Netherlands',
   online: 24.7
 }, {
   rank: 6,
-  flag: 'fancygrid.com/dashboards//iots/img/Germany.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Germany.png',
   country: 'Germany',
   online: 22.4
 }, {
   rank: 7,
-  flag: 'fancygrid.com/dashboards//iots/img/Sweden.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Sweden.png',
   country: 'Sweden',
   online: 21.9
 }, {
   rank: 8,
-  flag: 'fancygrid.com/dashboards//iots/img/Spain.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Spain.png',
   country: 'Spain',
   online: 19.9
 }, {
   rank: 9,
-  flag: 'fancygrid.com/dashboards//iots/img/France.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/France.png',
   country: 'France',
   online: 17.6
 }, {
   rank: 10,
-  flag: 'fancygrid.com/dashboards//iots/img/Portugal.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Portugal.png',
   country: 'Portugal',
   online: 16.2
 }, {
   rank: 11,
-  flag: 'fancygrid.com/dashboards//iots/img/Belgium.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Belgium.png',
   country: 'Belgium',
   online: 15.6
 }, {
   rank: 12,
-  flag: 'fancygrid.com/dashboards//iots/img/UK.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/UK.png',
   country: 'United Kingdom',
   online: 13.0
 }, {
   rank: 13,
-  flag: 'fancygrid.com/dashboards//iots/img/Canada.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Canada.png',
   country: 'Canada',
   online: 11.6
 }, {
   rank: 14,
-  flag: 'fancygrid.com/dashboards//iots/img/Italy.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Italy.png',
   country: 'Italy',
   online: 10.2
 }, {
   rank: 15,
-  flag: 'fancygrid.com/dashboards//iots/img/Brazil.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Brazil.png',
   country: 'Brazil',
   online: 9.2
 }, {
   rank: 16,
-  flag: 'fancygrid.com/dashboards//iots/img/Japan.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Japan.png',
   country: 'Japan',
   online: 8.2
 }, {
   rank: 17,
-  flag: 'fancygrid.com/dashboards//iots/img/Australia.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Australia.png',
   country: 'Australia',
   online: 7.9
 }, {
   rank: 18,
-  flag: 'fancygrid.com/dashboards//iots/img/Mexico.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Mexico.png',
   country: 'Mexico',
   online: 6.8
 }, {
   rank: 19,
-  flag: 'fancygrid.com/dashboards//iots/img/Poland.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Poland.png',
   country: 'Poland',
   online: 6.3
 }, {
   rank: 20,
-  flag: 'fancygrid.com/dashboards//iots/img/Colombia.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Colombia.png',
   country: 'Colombia',
   online: 6.1
 }, {
   rank: 21,
-  flag: 'fancygrid.com/dashboards//iots/img/Russia.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Russia.png',
   country: 'Russia',
   online: 4.9
 }, {
   rank: 22,
-  flag: 'fancygrid.com/dashboards//iots/img/Turkey.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/Turkey.png',
   country: 'Turkey',
   online: 2.3
 }, {
   rank: 23,
-  flag: 'fancygrid.com/dashboards//iots/img/India.png',
+  flag: 'http://fancygrid.com/dashboards/iots/img/India.png',
   country: 'India',
   online: 0.6
 }];
