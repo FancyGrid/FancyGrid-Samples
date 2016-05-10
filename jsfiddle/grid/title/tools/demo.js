@@ -25,7 +25,7 @@ var data = [
 
 $(function() {
 
-  new Fancy.Grid({
+var grid = new Fancy.Grid({
     title: {
       text: 'Grid of statistics',
       tools: [{
