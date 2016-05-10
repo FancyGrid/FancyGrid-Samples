@@ -28,7 +28,7 @@ $(function() {
   new Fancy.Grid({
     title: 'Title',
     subTitle: {
-      text: 'Title',
+      text: 'Sub Title',
       style: {
         'color': '#515151',
         'background-color': 'white',
