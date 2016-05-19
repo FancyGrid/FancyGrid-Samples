@@ -188,11 +188,12 @@ $(function() {
       editable: false,
       title: 'Hour rate',
       width: 80
+    }],
+    events: [{
+      cellclick: function() {
+        alert('cellclick');
+      }
     }]
-  });
-
-  grid.on('cellclick', function() {
-    alert('cellclick');
   });
 
 });
