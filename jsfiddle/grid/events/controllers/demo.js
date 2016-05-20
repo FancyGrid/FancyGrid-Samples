@@ -149,18 +149,129 @@ $(function() {
     hour: 29
   }];
 
-  var grid = new FancyGrid({
+  FancyGrid.defineController('mycontrol', {
+    controls: [{
+      event: 'cellclick',
+      selector: '.sign-minus',
+      handler: 'onClickMinus'
+    }, {
+      event: 'cellclick',
+      selector: '.sign-plus',
+      handler: 'onClickPlus'
+    }, {
+      event: 'cellmousedown',
+      selector: '.sign-minus',
+      handler: 'onMouseDownMinus'
+    }, {
+      event: 'cellmousedown',
+      selector: '.sign-plus',
+      handler: 'onMouseDownPlus'
+    }],
+    onClickMinus: function(grid, o) {
+      this.minusRate(o.item);
+      grid.update();
+    },
+    onClickPlus: function(grid, o) {
+      this.plusRate(o.item);
+      grid.update();
+    },
+    onMouseDownMinus: function(grid, o) {
+      var me = this;
+
+      me.minusRate(o.item);
+      grid.update();
+
+      me.minusDown = true;
+      me.timeoutChange(o);
+    },
+    onMouseDownPlus: function(grid, o) {
+      var me = this;
+
+      me.plusRate(o.item);
+      grid.update();
+
+      me.plusDown = true;
+      me.timeoutChange(o);
+    },
+    timeoutChange: function(o) {
+      var me = this;
+
+      setTimeout(function() {
+        if (me.plusDown || me.minusDown) {
+          var intervalUpdate = 200,
+            now = new Date(),
+            interval;
+
+          interval = setInterval(function() {
+            if (!me.plusDown && !me.minusDown) {
+              clearInterval(interval);
+            }
+
+            if (new Date - now > intervalUpdate) {
+              if (me.plusDown) {
+                me.plusRate(o.item);
+              } else if (me.minusDown) {
+                me.minusRate(o.item);
+              }
+
+              if (intervalUpdate > 50) {
+                intervalUpdate -= 17;
+              }
+
+              me.update();
+              now = new Date();
+            }
+          }, 7);
+        }
+      }, 500);
+    }
+  });
+
+  FancyGrid.defineController('mycontrol2', {
+    controls: [{
+      event: 'docmouseup',
+      handler: 'onMouseUp'
+    }],
+    onMouseUp: function() {
+      var me = this;
+
+      me.minusDown = false;
+      me.plusDown = false;
+    },
+    minusRate: function(item) {
+      var value = item.get('hour') - 1;
+
+      if (value < 5) {
+        value = 5;
+      }
+
+      item.set('hour', value);
+    },
+    plusRate: function(item) {
+      var value = item.get('hour') + 1;
+
+      if (value > 100) {
+        value = 100;
+      }
+
+      item.set('hour', value);
+    }
+  });
+
+  new FancyGrid({
     title: 'Employee',
     renderTo: 'container',
     width: 600,
     height: 500,
     data: data,
+    selModel: 'row',
     trackOver: true,
     defaults: {
       type: 'string',
       width: 100,
       sortable: true,
-      resizable: true
+      resizable: true,
+      editable: true
     },
     clicksToEdit: 1,
     columns: [{
@@ -181,20 +292,21 @@ $(function() {
       title: 'Position',
       width: 150
     }, {
-      index: '"$" + hour',
+      index: 'hour',
       type: 'number',
       format: 'number',
       cellAlign: 'center',
       editable: false,
+      render: function(o) {
+
+        o.value = '<a class="sign-minus">&ndash;</a><span class="hour-value">$' + o.value + '</span><a class="sign-plus">+</a>';
+
+        return o;
+      },
       title: 'Hour rate',
       width: 80
     }],
-    events: [{
-      cellclick: 'onCellClick'
-    }],
-    onCellClick: function() {
-      alert('cellclick');
-    }
+    controller: ['mycontrol', 'mycontrol2']
   });
 
 });

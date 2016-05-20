@@ -1,0 +1,28 @@
+.sign-minus {
+  color: #adb2b5;
+  font-size: 23px;
+  margin-right: 7px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sign-minus:hover {
+  text-decoration: none;
+}
+
+.sign-plus {
+  color: #adb2b5;
+  font-size: 23px;
+  margin-left: 7px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sign-plus:hover {
+  text-decoration: none;
+}
+
+.hour-value {
+  position: relative;
+  top: -3px;
+}
