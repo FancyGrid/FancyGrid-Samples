@@ -149,18 +149,48 @@ $(function() {
     hour: 29
   }];
 
+
   var grid = new FancyGrid({
+    subTitle: 'Events',
+    renderTo: 'events',
+    width: 630,
+    height: 300,
+    data: {
+      fields: ['name', 'options']
+    },
+    trackOver: true,
+    defaults: {
+      type: 'string',
+      sortable: true,
+      resizable: true,
+      editable: true
+    },
+    clicksToEdit: 1,
+    columns: [{
+      index: 'name',
+      width: 100,
+      title: 'Name'
+    }, {
+      index: 'options',
+      width: 495,
+      title: 'Options'
+    }]
+  });
+
+
+  new FancyGrid({
     title: 'Employee',
     renderTo: 'container',
-    width: 600,
-    height: 500,
+    width: 630,
+    height: 300,
     data: data,
     trackOver: true,
     defaults: {
       type: 'string',
       width: 100,
       sortable: true,
-      resizable: true
+      resizable: true,
+      editable: true
     },
     clicksToEdit: 1,
     columns: [{
@@ -184,14 +214,84 @@ $(function() {
       index: '"$" + hour',
       type: 'number',
       format: 'number',
-      cellAlign: 'center',
       editable: false,
       title: 'Hour rate',
       width: 80
+    }, {
+      type: 'action',
+      width: 65,
+      items: [{
+        text: 'Delete',
+        cls: 'action-column-remove',
+        action: 'remove'
+      }]
     }],
     events: [{
-      cellclick: function() {
-        alert('cellclick');
+      cellclick: function(g, o) {
+        var options = '{columnIndex:' + o.columnIndex + ', rowIndex:' + o.rowIndex + ', value: ' + o.value + ', ...}'
+        grid.insert({
+          name: 'cellclick',
+          options: options
+        });
+      }
+    }, {
+      celldblclick: function(g, o) {
+        var options = '{columnIndex:' + o.columnIndex + ', rowIndex:' + o.rowIndex + ', value: ' + o.value + ', ...}'
+        grid.insert({
+          name: 'celldblclick',
+          options: options
+        });
+      }
+    }, {
+      columnclick: function(g, o) {
+        var options = '{columnIndex:' + o.columnIndex + ', ...}'
+        grid.insert({
+          name: 'columnclick',
+          options: options
+        });
+      }
+    }, {
+      init: function() {
+        grid.insert({
+          name: 'init'
+        });
+      }
+    }, {
+      headercellclick: function(g, o) {
+        var options = '{index:' + o.index + ', ...}'
+        grid.insert({
+          name: 'headercellclick',
+          options: options
+        });
+      }
+    }, {
+      load: function() {
+        grid.insert({
+          name: 'load'
+        });
+      }
+    }, {
+      remove: function(g, o) {
+        grid.insert({
+          name: 'remove',
+          options: o
+        });
+      }
+    }, {
+      set: function(g, o) {
+        var options = '{id:' + o.id + ', key: ' + o.key + ', oldValue: ' + o.oldValue + ', value: ' + o.value + ', rowIndex: ' + o.rowIndex + '}';
+        grid.insert({
+          name: 'set',
+          options: options
+        });
+      }
+    }, {
+      sort: function(g, o) {
+        var options = '{key:' + o.key + ', action: ' + o.action + '}'
+        grid.insert({
+          name: 'sort',
+          options: options
+        });
       }
     }]
   });
