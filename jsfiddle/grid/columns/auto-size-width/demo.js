@@ -202,7 +202,7 @@ $(function() {
 
   new FancyGrid({
     renderTo: 'container',
-    title: 'Auto size columns\' width',
+    title: 'Auto size columns',
     width: 500,
     height: 400,
     data: data,
