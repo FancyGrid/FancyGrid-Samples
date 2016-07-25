@@ -1,4 +1,3 @@
-$(function() {
 
   var data = [{
     id: 1,
@@ -188,6 +187,8 @@ $(function() {
     active: true,
     about: 'Just married.'
   }];
+
+$(function() {
 
   var grid = new FancyGrid({
     title: 'Employee',
