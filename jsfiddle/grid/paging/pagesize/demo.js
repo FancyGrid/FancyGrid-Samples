@@ -206,7 +206,6 @@ new FancyGrid({
   width: 700,
   height: 400,
   data: {
-    pageSize: 20,
     items: data
   },
   clicksToEdit: 1,
@@ -216,7 +215,10 @@ new FancyGrid({
     editable: true,
     resizable: true
   },
-  paging: true,
+  paging: {
+	pageSize: 20,
+    pageSizeData: [5,10,20,50]
+  },
   columns: [{
     index: 'company',
     locked: true,
