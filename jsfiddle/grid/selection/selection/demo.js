@@ -221,93 +221,89 @@ var data = [{
 }];
 
 $(function() {
-  
+
 var grid = new FancyGrid({
   renderTo: 'container',
   title: 'Selection',
   width: 600,
   height: 400,
   data: data,
-  //Possible values: cell, cells, row, rows, column, columns
   selModel: 'cells',
   tbar: [{
-    text: 'Cell',
-	toggleGroup: 'sel',
-    handler: function(b) {
-	  b.setPressed(true);
-      grid.setSelModel('cell');
-    }
-  }, {
-    text: 'Cells',
-	toggleGroup: 'sel',
-    pressed: true,
-    handler: function(b) {
-      b.setPressed(true);
-      grid.setSelModel('cells');
-    }
-  }, {
-    text: 'Column',
-    toggleGroup: 'sel',
-    handler: function(b) {
-      b.setPressed(true);
-      grid.setSelModel('column');
-    }
-  }, {
-    text: 'Columns',
-    toggleGroup: 'sel',
-    handler: function(b) {
-      b.setPressed(true);
-      grid.setSelModel('columns');
-    }
-  }, {
-    text: 'Row',
-    toggleGroup: 'sel',
-    handler: function(b) {
-      b.setPressed(true);
-      grid.setSelModel('row');
-    }
-  }, {
-    text: 'Rows',
-    toggleGroup: 'sel',
-    handler: function(b) {
-      b.setPressed(true);
-      grid.setSelModel('rows');	  
-    }
+    type: 'segbutton',
+    items: [{
+      text: 'Cell',
+      toggleGroup: 'sel',
+      handler: function(b) {
+        grid.setSelModel('cell');
+      }
+    }, {
+      text: 'Cells',
+      toggleGroup: 'sel',
+      pressed: true,
+      handler: function(b) {
+        grid.setSelModel('cells');
+      }
+    }, {
+      text: 'Column',
+      toggleGroup: 'sel',
+      handler: function(b) {
+        grid.setSelModel('column');
+      }
+    }, {
+      text: 'Columns',
+      toggleGroup: 'sel',
+      handler: function(b) {
+        grid.setSelModel('columns');
+      }
+    }, {
+      text: 'Row',
+      toggleGroup: 'sel',
+      handler: function(b) {
+        grid.setSelModel('row');
+      }
+    }, {
+      text: 'Rows',
+      toggleGroup: 'sel',
+      handler: function(b) {
+        grid.setSelModel('rows');
+      }
+    }]
   }],
   defaults: {
-  type: 'string',
-  width: 100,
-  sortable: true,
-  resizable: true
+    type: 'string',
+    width: 100,
+    sortable: true,
+    resizable: true
   },
   columns: [{
-  index: 'id',
-  title: 'Id',
-  locked: true,
-  width: 50,
-  type: 'number'
+    index: 'id',
+    title: 'Id',
+    locked: true,
+    width: 50,
+    type: 'number'
   }, {
-  index: 'company',
-  title: 'Company'
+    index: 'company',
+    title: 'Company'
   }, {
-  index: 'name',
-  title: 'Name'
+    index: 'name',
+    title: 'Name'
   }, {
-  index: 'surname',
-  title: 'Sur Name'
+    index: 'surname',
+    title: 'Sur Name'
   }, {
-  index: 'age',
-  title: 'Age',
-  type: 'number'
+    index: 'age',
+    title: 'Age',
+    type: 'number'
   }, {
-  index: 'knownledge',
-  title: 'Knownledge',
-  width: 100
+    index: 'knownledge',
+    title: 'Knownledge',
+    width: 100
   }, {
-  index: 'position',
-  title: 'Position',
-  rightLocked: true,
-  width: 100
+    index: 'position',
+    title: 'Position',
+    rightLocked: true,
+    width: 100
   }]
 });
 

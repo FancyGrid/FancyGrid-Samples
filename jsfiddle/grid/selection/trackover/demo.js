@@ -208,30 +208,48 @@ var grid = new FancyGrid({
   data: data,
   debug: true,
   trackOver: true,
-  //columnTrackOver: true,
-  //cellTrackOver: true,
   tbar: [{
     text: 'Cell',
     enableToggle: true,
-    handler: function(b){
-      b.toggle();
+    handler: function(b) {
       grid.setTrackOver('cell', b.pressed);
     }
-  },{
+  }, {
     text: 'Column',
     enableToggle: true,
-    handler: function(b){
-      b.toggle();
+    handler: function(b) {
       grid.setTrackOver('column', b.pressed);
     }
-  },{
+  }, {
     text: 'Row',
     enableToggle: true,
     pressed: true,
-    handler: function(b){
-      b.toggle();
+    handler: function(b) {
       grid.setTrackOver('row', b.pressed);
     }
+  }],
+  tbar: [{
+    type: 'segbutton',
+    items: [{
+      text: 'Cell',
+      enableToggle: true,
+      handler: function(b) {
+        grid.setTrackOver('cell', b.pressed);
+      }
+    }, {
+      text: 'Column',
+      enableToggle: true,
+      handler: function(b) {
+        grid.setTrackOver('column', b.pressed);
+      }
+    }, {
+      text: 'Row',
+      enableToggle: true,
+      pressed: true,
+      handler: function(b) {
+        grid.setTrackOver('row', b.pressed);
+      }
+    }]
   }],
   defaults: {
     type: 'string',
@@ -244,24 +262,24 @@ var grid = new FancyGrid({
     title: 'Id',
     width: 50,
     type: 'number'
-  },{
+  }, {
     index: 'company',
     title: 'Company',
-  },{
+  }, {
     index: 'name',
     title: 'Name'
-  },{
+  }, {
     index: 'surname',
     title: 'Sur Name'
-  },{
+  }, {
     index: 'age',
     title: 'Age',
     width: 50,
     type: 'number'
-  },{
-    index: 'knownledge',    
+  }, {
+    index: 'knownledge',
     title: 'Knownledge'
-  },{
+  }, {
     index: 'position',
     title: 'Position'
   }]
