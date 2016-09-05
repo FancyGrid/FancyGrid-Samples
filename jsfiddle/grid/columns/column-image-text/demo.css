@@ -1,5 +1,6 @@
 .photo img {
   width: 80px;
+  max-width: none;
   margin-top: -5px;
   margin-left: -10px;
 }
@@ -8,4 +9,10 @@
   margin-top: 30px;
   margin-left: 14px;
   font-size: 14px;
+}
+
+.id-column-cls .fancy-grid-cell {
+  border-right-width: 1px;
+  border-right-color: rgb(211, 219, 225);
+  background-color: rgb(240, 242, 244);
 }
