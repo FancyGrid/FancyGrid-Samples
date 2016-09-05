@@ -1,0 +1,15 @@
+.image-staff img {
+  margin-top: -15px;
+  border-radius: 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.fancy-theme-staff .fancy-grid-cell-inner {
+  margin-top: 20px;
+}
+
+.fancy-theme-staff .fancy-grid-column-sparkline  .fancy-grid-cell-inner {
+  margin-top: 9px;
+}
