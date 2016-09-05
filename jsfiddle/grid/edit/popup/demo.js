@@ -53,7 +53,7 @@ var data = [{
   "name": "Nick",
   "surname": "Thomson",
   "salary": 10000,
-  "image": "/images/staff/boy-4.png",
+  "image": "http://fancygrid.com/images/staff/boy-4.png",
   "phone": "858-490-5000",
   "sales": [4, 7, 15, 4, 7, 8, 0],
   "birthday": "1961.10.01"
@@ -62,7 +62,7 @@ var data = [{
   "name": "Peter",
   "surname": "West",
   "salary": 7000,
-  "image": "/images/staff/boy-2.png",
+  "image": "http://fancygrid.com/images/staff/boy-2.png",
   "phone": "858-490-5001",
   "sales": [8, 9, 7, 9, 7, 5, 0],
   "birthday": "1965.1.5"
@@ -71,7 +71,7 @@ var data = [{
   "name": "Alexander",
   "surname": "Brown",
   "salary": 6000,
-  "image": "/images/staff/boy-3.png",
+  "image": "http://fancygrid.com/images/staff/boy-3.png",
   "phone": "858-490-5002",
   "sales": [2, 2, 3, 1, 1, 2, 0],
   "birthday": "1966.8.21"
@@ -80,7 +80,7 @@ var data = [{
   "name": "Nicholas",
   "surname": "Miller",
   "salary": 6000,
-  "image": "/images/staff/boy-5.png",
+  "image": "http://fancygrid.com/images/staff/boy-5.png",
   "phone": "858-490-5003",
   "sales": [3, 3, 4, 2, 3, 3, 0],
   "birthday": "1967.9.17"
@@ -89,7 +89,7 @@ var data = [{
   "name": "Sophia",
   "surname": "Smith",
   "salary": 5500,
-  "image": "/images/staff/girl.png",
+  "image": "http://fancygrid.com/images/staff/girl.png",
   "phone": "858-490-5004",
   "sales": [0, 0, 0, 0, 0, 0, 0],
   "birthday": "1970.2.1"
@@ -98,7 +98,7 @@ var data = [{
   "name": "Emma",
   "surname": "Walker",
   "salary": 5000,
-  "image": "/images/staff/girl-1.png",
+  "image": "http://fancygrid.com/images/staff/girl-1.png",
   "phone": "858-490-5005",
   "sales": [5, 4, 3, 5, 5, 8, 0],
   "birthday": "1965.1.7"
@@ -107,7 +107,7 @@ var data = [{
   "name": "Ted",
   "surname": "Smith",
   "salary": 5000,
-  "image": "/images/staff/boy.png",
+  "image": "http://fancygrid.com/images/staff/boy.png",
   "phone": "858-490-5006",
   "sales": [1, 3, 4, 5, 2, 2, 0],
   "birthday": "1970.8.11"
@@ -116,7 +116,7 @@ var data = [{
   "name": "Ryan",
   "surname": "Walker",
   "salary": 5000,
-  "image": "/images/staff/boy-1.png",
+  "image": "http://fancygrid.com/images/staff/boy-1.png",
   "phone": "858-490-5007",
   "sales": [1, 2, 3, 4, 4, 3, 0],
   "birthday": "1975.11.7"
@@ -125,7 +125,7 @@ var data = [{
   "name": "Lily",
   "surname": "Richardson",
   "salary": 5000,
-  "image": "/images/staff/girl-2.png",
+  "image": "http://fancygrid.com/images/staff/girl-2.png",
   "phone": "858-490-5008",
   "sales": [2, 2, 3, 3, 3, 1, 0],
   "birthday": "1977.10.1"
@@ -134,7 +134,7 @@ var data = [{
   "name": "Mia",
   "surname": "Grant",
   "salary": 5000,
-  "image": "/images/staff/girl-3.png",
+  "image": "http://fancygrid.com/images/staff/girl-3.png",
   "phone": "858-490-5009",
   "sales": [2, 3, 4, 4, 5, 6, 0],
   "birthday": "1978.8.3"
@@ -143,7 +143,7 @@ var data = [{
   "name": "Olivia",
   "surname": "Edwards",
   "salary": 5000,
-  "image": "/images/staff/girl-4.png",
+  "image": "http://fancygrid.com/images/staff/girl-4.png",
   "phone": "858-490-5020",
   "sales": [2, 1, 3, 4, 5, 1, 0],
   "birthday": "1979.9.8"
@@ -152,7 +152,7 @@ var data = [{
   "name": "Katie",
   "surname": "Gardner",
   "salary": 5000,
-  "image": "/images/staff/girl-5.png",
+  "image": "http://fancygrid.com/images/staff/girl-5.png",
   "phone": "858-490-5021",
   "sales": [2, 3, 4, 5, 1, 2, 0],
   "birthday": "1988.7.7"
@@ -161,7 +161,7 @@ var data = [{
   "name": "Ivan",
   "surname": "Woods",
   "salary": 5000,
-  "image": "/images/staff/man-1.png",
+  "image": "http://fancygrid.com/images/staff/man-1.png",
   "phone": "858-490-5022",
   "sales": [1, 2, 3, 4, 1, 1, 0],
   "birthday": "1990.1.1"
@@ -170,7 +170,7 @@ var data = [{
   "name": "Lorenzo",
   "surname": "Simpson",
   "salary": 2000,
-  "image": "/images/staff/man.png",
+  "image": "http://fancygrid.com/images/staff/man.png",
   "phone": "858-490-5023",
   "sales": [1, 0, 1, 1, 2, 1, 0],
   "birthday": "1995.2.5"
