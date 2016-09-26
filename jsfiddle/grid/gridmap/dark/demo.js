@@ -519,16 +519,22 @@ $(function() {
                     myGridMap.update();
                   }
                 }
+              }],
+              events: [{
+                init: function() {
+                  editForm.set(item.get());
+                  editForm.showAt(e.pageX - 50, e.pageY - 50);
+                }
               }]
             });
 
             editForm = this.editForm;
+          } else {
+            editForm.set(item.get());
+            editForm.showAt(e.pageX - 50, e.pageY - 50);
           }
 
           editForm.setTitle(item.get('name'));
-          editForm.set(item.get());
-
-          editForm.showAt(e.pageX - 50, e.pageY - 50);
         }
       }]
     });
