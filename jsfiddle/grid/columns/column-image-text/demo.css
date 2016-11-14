@@ -12,7 +12,6 @@
 }
 
 .id-column-cls .fancy-grid-cell {
-  border-right-width: 1px;
-  border-right-color: rgb(211, 219, 225);
+  border-right: 1px solid rgb(211, 219, 225) !important;
   background-color: rgb(240, 242, 244);
 }
