@@ -210,7 +210,7 @@ $(function() {
     renderTo: 'container',
     title: 'Register',
     width: 420,
-    height: 500,
+    height: 510,
     items: [{
       type: 'set',
       label: 'User Info',

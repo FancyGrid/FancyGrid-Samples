@@ -176,136 +176,135 @@ var data = [{
   "birthday": "1995.2.5"
 }];
 
+$(function() {
 
-Fancy.defineTheme('staff', {
-  config: {
-    cellHeight: 60
-  }
-});
 
-Fancy.defineController('staffGridConrol', {
-  onSelect: function(grid) {
-    var selection = grid.getSelection(),
-      editButton = grid.tbar[2];
-
-    if (selection.length === 1) {
-      editButton.enable();
-    } else {
-      editButton.disable();
+  Fancy.defineTheme('staff', {
+    config: {
+      cellHeight: 60
     }
-  },
-  onClearSelect: function(grid) {
-    grid.tbar[1].disable();
-  },
-  onRowDBLClick: function(grid, o) {
-    grid.editUser(o.data);
-  },
-  editUser: function(item) {
-    var me = this,
-      staffEditForm = me.staffEditForm;
+  });
 
-    if (staffEditForm) {
-      staffEditForm.set(item);
-      staffEditForm.setTitle(item.name + ' ' + item.surname);
+  Fancy.defineController('staffGridConrol', {
+    onSelect: function(grid) {
+      var selection = grid.getSelection(),
+        editButton = grid.tbar[2];
 
-      staffEditForm.show();
-    } else {
-      staffEditForm = new FancyForm({
-        title: {
-          text: item.name + ' ' + item.surname,
-          tools: [{
+      if (selection.length === 1) {
+        editButton.enable();
+      } else {
+        editButton.disable();
+      }
+    },
+    onClearSelect: function(grid) {
+      grid.tbar[1].disable();
+    },
+    onRowDBLClick: function(grid, o) {
+      grid.editUser(o.data);
+    },
+    editUser: function(item) {
+      var me = this,
+        staffEditForm = me.staffEditForm;
+
+      if (staffEditForm) {
+        staffEditForm.set(item);
+        staffEditForm.setTitle(item.name + ' ' + item.surname);
+
+        staffEditForm.show();
+      } else {
+        staffEditForm = new FancyForm({
+          title: {
+            text: item.name + ' ' + item.surname,
+            tools: [{
+              text: 'Close',
+              handler: function() {
+                this.hide();
+              }
+            }]
+          },
+          window: true,
+          draggable: true,
+          width: 300,
+          height: 370,
+          defaults: {
+            type: 'string'
+          },
+          items: [{
+            label: 'Name',
+            name: 'name',
+            value: item.name
+          }, {
+            label: 'Sur Name',
+            name: 'surname',
+            value: item.surname
+          }, {
+            label: 'Position',
+            name: 'position',
+            value: item.position
+          }, {
+            label: 'Salary',
+            name: 'salary',
+            value: item.salary,
+            spin: true,
+            step: 1000,
+            type: 'number',
+            min: 0,
+            max: 150000,
+            format: {
+              inputFn: salaryInputFn
+            }
+          }, {
+            label: 'Phone',
+            name: 'phone',
+            value: item.phone,
+            emptyText: 'xxx-xxx-xxxx',
+            vtype: 'notempty',
+            emptyText: 'xxx-xxx-xxxx',
+            format: {
+              inputFn: phoneInputFn
+            }
+          }, {
+            label: 'Birthday',
+            name: 'birthday',
+            value: item.birthday,
+            format: {
+              read: 'Y.m.d',
+              write: 'Y.m.d',
+              edit: 'd.m.Y'
+            },
+            type: 'date'
+          }, {
+            label: 'Image url',
+            name: 'image',
+            value: item.image
+          }, {
+            name: 'id',
+            value: item.id,
+            type: 'hidden'
+          }],
+          buttons: ['side', {
             text: 'Close',
             handler: function() {
               this.hide();
             }
+          }, {
+            text: 'Save',
+            handler: function() {
+              me.getById(this.get('id')).set(this.get());
+              me.update();
+            }
+          }],
+          events: [{
+            init: function() {
+              this.show();
+            }
           }]
-        },
-        window: true,
-        draggable: true,
-        width: 300,
-        height: 370,
-        defaults: {
-          type: 'string'
-        },
-        items: [{
-          label: 'Name',
-          name: 'name',
-          value: item.name
-        }, {
-          label: 'Sur Name',
-          name: 'surname',
-          value: item.surname
-        }, {
-          label: 'Position',
-          name: 'position',
-          value: item.position
-        }, {
-          label: 'Salary',
-          name: 'salary',
-          value: item.salary,
-          spin: true,
-          step: 1000,
-          type: 'number',
-          min: 0,
-          max: 150000,
-          format: {
-            inputFn: salaryInputFn
-          }
-        }, {
-          label: 'Phone',
-          name: 'phone',
-          value: item.phone,
-          emptyText: 'xxx-xxx-xxxx',
-          vtype: 'notempty',
-          emptyText: 'xxx-xxx-xxxx',
-          format: {
-            inputFn: phoneInputFn
-          }
-        }, {
-          label: 'Birthday',
-          name: 'birthday',
-          value: item.birthday,
-          format: {
-            read: 'Y.m.d',
-            write: 'Y.m.d',
-            edit: 'd.m.Y'
-          },
-          type: 'date'
-        }, {
-          label: 'Image url',
-          name: 'image',
-          value: item.image
-        }, {
-          name: 'id',
-          value: item.id,
-          type: 'hidden'
-        }],
-        buttons: ['side', {
-          text: 'Close',
-          handler: function() {
-            this.hide();
-          }
-        }, {
-          text: 'Save',
-          handler: function() {
-            me.getById(this.get('id')).set(this.get());
-            me.update();
-          }
-        }],
-        events: [{
-          init: function() {
-            this.show();
-          }
-        }]
-      });
+        });
 
-      me.staffEditForm = staffEditForm;
+        me.staffEditForm = staffEditForm;
+      }
     }
-  }
-});
-
-
-$(function() {
+  });
 
 
   new FancyGrid({
