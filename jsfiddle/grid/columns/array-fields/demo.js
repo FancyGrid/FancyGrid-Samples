@@ -53,10 +53,6 @@ new FancyGrid({
     index: 'age',
     title: 'Age',
     type: 'number'
-  },{
-    index: 'education',
-    title: 'Education',
-    width: 150
   }]
 });
 
