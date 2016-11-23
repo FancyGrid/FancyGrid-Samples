@@ -55,7 +55,6 @@ new FancyGrid({
     }
   },
   renderTo: 'container',
-  //theme: 'stock',
   width: 610,
   height: 450,
   trackOver: true,
