@@ -204,7 +204,7 @@ var data = [{
 new FancyGrid({
   title: 'JSON Data',
   renderTo: 'container',
-  width: 700,
+  width: 550,
   height: 400,
   data: data,
   defaults: {
@@ -214,6 +214,7 @@ new FancyGrid({
   },
   columns: [{
     index: 'company',
+	width: 100,
     locked: true,
     title: 'Company'
   },{
@@ -226,11 +227,6 @@ new FancyGrid({
     index: 'age',
     title: 'Age',
     type: 'number'
-  },{
-    index: 'education',
-    locked: true,
-    title: 'Education',
-    width: 150
   }]
 });
 
