@@ -520,6 +520,7 @@ $(function() {
                 text: 'Save',
                 handler: function() {
                   var statesGrid = FancyGrid.get('statesInfoGrid'),
+					myGridMap = FancyGrid.get('gridMap'),
                     data = this.get(),
                     item = statesGrid.findItem('abbr', data.abbr)[0];
 
