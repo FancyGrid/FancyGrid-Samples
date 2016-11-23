@@ -5,7 +5,6 @@ var data = [{
   email: 'ted.smith@gmail.com',
   company: 'Electrical Systems',
   age: 30,
-  education: 'High School Of Cambridge',
   knownledge: 'Java, Ruby'
 }, {
   name: 'Ed',
@@ -14,7 +13,6 @@ var data = [{
   email: 'ed.johnson@gmail.com',
   company: 'Energy and Oil',
   age: 35,
-  education: 'High School Of Cambridge',
   knownledge: 'C++'
 }, {
   name: 'Sam',
@@ -23,7 +21,6 @@ var data = [{
   email: 'sam.williams@gmail.com',
   company: 'Airbus',
   age: 38,
-  education: 'High School Of Cambridge',
   knownledge: ''
 }, {
   name: 'Alexander',
@@ -32,7 +29,6 @@ var data = [{
   email: 'alexander.brown@gmail.com',
   company: 'Renault',
   age: 24,
-  education: 'High School Of Cambridge',
   knownledge: ''
 }, {
   name: 'Nicholas',
@@ -41,7 +37,6 @@ var data = [{
   email: 'nicholas.miller@gmail.com',
   company: 'Adobe',
   age: 33,
-  education: 'High School Of Cambridge',
   knownledge: 'Unix, C/C++'
 }, {
   name: 'Andrew',
@@ -50,7 +45,6 @@ var data = [{
   email: 'andrew.thompson@gmail.com',
   company: 'Google',
   age: 28,
-  education: 'High School Of Cambridge',
   knownledge: ''
 }, {
   name: 'Ryan',
@@ -59,7 +53,6 @@ var data = [{
   email: 'ryan.walker@gmail.com',
   company: 'Siemens',
   age: 39,
-  education: 'High School Of Cambridge',
   knownledge: 'ActionScript'
 }, {
   name: 'John',
@@ -68,7 +61,6 @@ var data = [{
   email: 'john.scott@gmail.com',
   company: 'Cargo',
   age: 45,
-  education: 'High School Of Cambridge',
   knownledge: 'Flex'
 }, {
   name: 'James',
@@ -77,7 +69,6 @@ var data = [{
   email: 'james.phillips@gmail.com',
   company: 'Pro bugs',
   age: 30,
-  education: 'High School Of Cambridge',
   knownledge: 'C/C++, Unix'
 }, {
   name: 'Brian',
@@ -86,7 +77,6 @@ var data = [{
   email: 'brian.edwards@gmail.com',
   company: 'IT Consultant',
   age: 23,
-  education: 'High School Of Cambridge',
   knownledge: 'C/C++ Unix'
 }, {
   name: 'Jack',
@@ -95,7 +85,6 @@ var data = [{
   email: 'jack.richardson@gmail.com',
   company: 'Europe IT',
   age: 24,
-  education: 'High School Of Cambridge',
   knownledge: 'Ruby'
 }, {
   name: 'Alex',
@@ -104,7 +93,6 @@ var data = [{
   email: 'alex.howard@gmail.com',
   company: 'Cisco',
   age: 27,
-  education: 'High School Of Cambridge',
   knownledge: 'CSS3/HTML5'
 }, {
   name: 'Carlos',
@@ -113,7 +101,6 @@ var data = [{
   email: 'carlos.wood@gmail.com',
   company: 'HP',
   age: 36,
-  education: 'High School Of Cambridge',
   knownledge: 'Node.js'
 }, {
   name: 'Adrian',
@@ -122,7 +109,6 @@ var data = [{
   email: 'adrian.russell@gmail.com',
   company: 'Micro Systems',
   age: 31,
-  education: 'High School Of Cambridge',
   knownledge: 'HTML, JavaScript'
 }, {
   name: 'Jeremy',
@@ -131,7 +117,6 @@ var data = [{
   email: 'jeremy.hamilton@gmail.com',
   company: 'Big Machines',
   age: 30,
-  education: 'High School Of Cambridge',
   knownledge: 'Scala'
 }, {
   name: 'Ivan',
@@ -140,7 +125,6 @@ var data = [{
   email: 'ivan.woods@gmail.com',
   company: '',
   age: 24,
-  education: 'High School Of Cambridge',
   knownledge: 'Objective C'
 }, {
   name: 'Peter',
@@ -149,7 +133,6 @@ var data = [{
   email: 'peters.west@gmail.com',
   company: 'Adobe',
   age: 26,
-  education: 'High School Of Cambridge',
   knownledge: 'PHP/HTML'
 }, {
   name: 'Scott',
@@ -158,7 +141,6 @@ var data = [{
   email: 'scott.simpson@gmail.com',
   company: 'IBM',
   age: 29,
-  education: 'High School Of Cambridge',
   knownledge: 'Adobe PhotoShop'
 }, {
   name: 'Lorenzo',
@@ -167,7 +149,6 @@ var data = [{
   email: 'lorenzo.tucker@gmail.com',
   company: 'Intel',
   age: 29,
-  education: 'High School Of Cambridge',
   knownledge: ''
 }, {
   name: 'Randy',
@@ -176,7 +157,6 @@ var data = [{
   email: 'randy.grant@gmail.com',
   company: 'Bridges',
   age: 30,
-  education: 'High School Of Cambridge',
   knownledge: ''
 }, {
   name: 'Arthur',
@@ -185,7 +165,6 @@ var data = [{
   email: 'arthur.gardner@gmail.com',
   company: 'Google',
   age: 31,
-  education: 'High School Of Cambridge',
   knownledge: ''
 }, {
   name: 'Orlando',
@@ -194,7 +173,6 @@ var data = [{
   email: 'orlando.ruiz@gmail.com',
   company: 'Apple',
   age: 32,
-  education: 'High School Of Cambridge',
   knownledge: ''
 }];
 
@@ -203,7 +181,7 @@ $(function() {
 new FancyGrid({
   title: 'Paging',
   renderTo: 'container',
-  width: 700,
+  width: 600,
   height: 400,
   data: data,
   clicksToEdit: 1,
@@ -228,11 +206,6 @@ new FancyGrid({
     index: 'age',
     title: 'Age',
     type: 'number'
-  },{
-    index: 'education',
-    locked: true,
-    title: 'Education',
-    width: 150
   }]
 });
 
