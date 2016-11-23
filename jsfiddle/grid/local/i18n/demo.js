@@ -208,7 +208,7 @@ renderUsersGrid('Deutsch', 'de');
     theme: 'i18n',
     renderTo: 'grid-i18n',
     width: 570,
-    height: 235,
+    height: 237,
     data: data,
     header: false,
     cellTrackOver: true,
