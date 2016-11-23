@@ -204,7 +204,7 @@ var data = [{
 new FancyGrid({
   title: 'Right Locked Columns',
   renderTo: 'container',
-  width: 800,
+  width: 700,
   height: 400,
   data: data,
   defaults: {
@@ -227,11 +227,6 @@ new FancyGrid({
     index: 'age',
     title: 'Age',
     type: 'number'
-  },{
-    index: 'education',
-    locked: true,
-    title: 'Education',
-    width: 100
   },{
     index: 'knownledge',
     title: 'Knownledge',
