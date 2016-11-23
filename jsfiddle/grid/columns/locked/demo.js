@@ -227,11 +227,6 @@ new FancyGrid({
     title: 'Age',
     type: 'number'
   },{
-    index: 'education',
-    locked: true,
-    title: 'Education',
-    width: 150
-  },{
     index: 'knownledge',
     title: 'Knownledge',
     width: 100
