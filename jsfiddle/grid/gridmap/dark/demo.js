@@ -470,6 +470,7 @@ $(function() {
       events: [{
         cellclick: function(grid, o) {
           var statesGrid = FancyGrid.get('statesInfoGrid');
+		  var myGridMap = FancyGrid.get('gridMap');
           var item = statesGrid.findItem('abbr', o.value)[0],
             e = o.e,
             editForm = this.editForm;
