@@ -1,6 +1,6 @@
 .action-column-remove {
   cursor: pointer;
-  padding: 5px;
+  padding: 5px !important;
   position: relative;
   top: -5px;
   border-radius: 2px;
