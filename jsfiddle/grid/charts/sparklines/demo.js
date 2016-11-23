@@ -22,8 +22,8 @@ $(function(){
 
   new FancyGrid({
     renderTo: 'grid',
-    width: 670,
-    height: 550,
+    width: 'fit',
+    height: 'fit',
     theme: 'blue',
     data: {
       items: data
