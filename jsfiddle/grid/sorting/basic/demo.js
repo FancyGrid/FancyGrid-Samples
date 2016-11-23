@@ -204,7 +204,7 @@ $(function(){
 new FancyGrid({
   title: 'Sorting',
   renderTo: 'container',
-  width: 700,
+  width: 550,
   height: 400,
   data: data,
   clicksToEdit: 1,
@@ -218,6 +218,7 @@ new FancyGrid({
   columns: [{
     index: 'company',
     locked: true,
+	width: 120,
     title: 'Company'
   },{
     index: 'name',
@@ -229,11 +230,6 @@ new FancyGrid({
     index: 'age',
     title: 'Age',
     type: 'number'
-  },{
-    index: 'education',
-    locked: true,
-    title: 'Education',
-    width: 150
   }]
 });
 
