@@ -13,7 +13,7 @@
   border-right-width: 1px;
   border-right-color: rgb(211, 219, 225);
   background-color: rgb(240, 242, 244);
-  background: #ececec url(http://fancygrid.com/a_bg.png) 0 -1px repeat-x !important;
+  background: #ececec url(http://fancygrid.com/img/a_bg.png) 0 -1px repeat-x !important;
   border-color: #ccc;
 }
 
@@ -22,8 +22,8 @@
 }
 
 .fancy-theme-gray.fancy-panel .fancy-panel-header {
-  color: white;
-  background-color: white;
+  color: white !important;
+  background-color: white !important;
   border-bottom: 1px solid #d3dbe1;
 }
 
