@@ -33,7 +33,7 @@
 }
 
 .column-cls-kia-model-name .fancy-grid-cell-inner {
-  color: #FFF;
+  color: #FFF !important;
   font: 12px/20px Arial;
   margin-top: 6px;
 }
