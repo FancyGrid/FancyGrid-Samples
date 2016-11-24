@@ -279,7 +279,7 @@ $(function() {
       index: 'country',
       title: 'Country',
       type: 'combo',
-      width: 99,
+      width: 95,
       data: ['USA', 'Canada', 'England']
     }, {
       index: 'married',

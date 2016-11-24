@@ -1,0 +1,43 @@
+.photo img {
+  width: 80px;
+  margin-top: -5px;
+  margin-left: -10px;
+}
+
+.id-column-cls .fancy-grid-cell-inner {
+  margin-left: 14px;
+  font-size: 14px;
+}
+
+.id-column-cls .fancy-grid-cell {
+  border-right-width: 1px;
+  border-right-color: rgb(211, 219, 225);
+  background-color: rgb(240, 242, 244);
+  background: #ececec url(http://fancygrid.com/a_bg.png) 0 -1px repeat-x !important;
+  border-color: #ccc;
+}
+
+.column-percent .fancy-grid-cell-inner {
+  font-weight: bold;
+}
+
+.fancy-theme-gray.fancy-panel .fancy-panel-header {
+  color: white;
+  background-color: white;
+  border-bottom: 1px solid #d3dbe1;
+}
+
+.column-cls-kia-model-name .fancy-grid-cell {
+  background: #626262  !important;
+  border-right-color: #626262;
+}
+
+.column-cls-kia-model-name .fancy-grid-cell-inner {
+  color: #FFF;
+  font: 12px/20px Arial;
+  margin-top: 6px;
+}
+
+#mc {
+  background: #f9f9f9 url(http://fancygrid.com/img/bg_body.gif) 0 0 repeat;
+}
