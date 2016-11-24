@@ -13,7 +13,7 @@
   border-right-width: 1px;
   border-right-color: rgb(211, 219, 225);
   background-color: rgb(240, 242, 244);
-  background: #ececec url("a_bg.png") 0 -1px repeat-x !important;
+  background: #ececec url(http://fancygrid.com/img/a_bg.png) 0 -1px repeat-x !important;
   border-color: #ccc;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .fancy-theme-kia .fancy-grid-header-cell {
-  background: #ececec url(/http://fancygrid.com/img/a_bg.png) 0 -1px repeat-x !important;
+  background: #ececec url(http://fancygrid.com/img/a_bg.png) 0 -1px repeat-x !important;
   border-color: #ddd;
   color: #515151;
   font-size: 11px;
@@ -84,7 +84,7 @@
 }
 
 #mc {
-  background: #f9f9f9 url(/http://fancygrid.com/img/bg_body.gif) 0 0 repeat;
+  background: #f9f9f9 url(http://fancygrid.com/img/bg_body.gif) 0 0 repeat;
 }
 
 .fancy-theme-kia .fancy-grid-column .fancy-grid-cell-over {
