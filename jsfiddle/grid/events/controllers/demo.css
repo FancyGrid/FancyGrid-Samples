@@ -13,7 +13,7 @@
 .sign-plus {
   color: #adb2b5;
   font-size: 23px;
-  margin-left: 7px;
+  margin-left: 7px !important;
   cursor: pointer;
   text-decoration: none;
 }
