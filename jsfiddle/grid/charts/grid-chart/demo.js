@@ -127,7 +127,7 @@ $(function() {
     title: '<img src="http://fancygrid.com/img/logo_2.png" style="height:30px;position: relative;top:-7px;width: auto;">',
     renderTo: 'grid',
     width: 690,
-    height: 350,
+    height: 'fit',
     data: {
       items: data,
       chart: [{
