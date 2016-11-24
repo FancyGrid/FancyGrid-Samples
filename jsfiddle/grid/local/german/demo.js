@@ -205,7 +205,7 @@ $(function(){
 new FancyGrid({
   renderTo: 'container',
   title: 'Deutsch',
-  width: 700,
+  width: 600,
   height: 400,
   data: data,
   clicksToEdit: 1,
