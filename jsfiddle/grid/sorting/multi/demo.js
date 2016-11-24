@@ -151,10 +151,12 @@ $(function(){
     columns: [{
       index: 'age',
       title: 'Age',
+	  width: 50,
       type: 'number'
     }, {
       index: 'salary',
       title: 'Salary',
+	  width: 80,
       type: 'currency'
     }, {
       index: 'name',
