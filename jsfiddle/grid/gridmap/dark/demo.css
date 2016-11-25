@@ -18,3 +18,7 @@
   font-weight: bold;
   color: #D7EDF6;
 }
+
+.fancy-theme-myGridMap .fancy-grid-body .fancy-grid-column .fancy-grid-cell-selected {
+  background: none;
+}

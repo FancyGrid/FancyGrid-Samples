@@ -301,7 +301,6 @@ $(function() {
   };
 
   var max = {
-    //population: 39144818,
     population: 10000000,
     income: 70004
   };
@@ -466,77 +465,6 @@ $(function() {
         index: 'c11'
       }, {
         index: 'c12'
-      }],
-      events: [{
-        cellclick: function(grid, o) {
-          var statesGrid = FancyGrid.get('statesInfoGrid');
-		  var myGridMap = FancyGrid.get('gridMap');
-          var item = statesGrid.findItem('abbr', o.value)[0],
-            e = o.e,
-            editForm = this.editForm;
-
-          if (!item) {
-            return;
-          }
-
-          if (!editForm) {
-            this.editForm = new FancyForm({
-              theme: 'dark',
-              window: true,
-              draggable: true,
-              width: 300,
-              height: 200,
-              title: {
-                text: item.get('name'),
-                tools: [{
-                  text: 'Close',
-                  handler: function() {
-                    this.hide();
-                  }
-                }],
-              },
-              defaults: {
-                type: 'string'
-              },
-              items: [{
-                label: 'Population',
-                name: 'population'
-              }, {
-                label: 'Income',
-                name: 'income'
-              }, {
-                type: 'hidden',
-                name: 'abbr'
-              }],
-              buttons: ['side', {
-                text: 'Save',
-                handler: function() {
-                  var data = this.get(),
-                    item = statesGrid.findItem('abbr', data.abbr)[0];
-
-                  if (item) {
-                    item.set(data);
-                    statesGrid.update();
-                    myGridMap.update();
-                  }
-                }
-              }],
-              events: [{
-                init: function() {
-                  editForm.set(item.get());
-                  editForm.showAt(e.pageX - 50, e.pageY - 50);
-                }
-              }]
-            });
-
-            editForm = this.editForm;
-          } else {
-            editForm.set(item.get());
-            editForm.showAt(e.pageX - 50, e.pageY - 50);
-          }
-
-          editForm.setTitle(item.get('name'));
-        }
       }]
     });
   }
