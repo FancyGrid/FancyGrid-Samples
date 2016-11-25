@@ -206,30 +206,10 @@ var grid = new FancyGrid({
   width: 615,
   height: 400,
   data: data,
-  debug: true,
   trackOver: true,
   tbar: [{
-    text: 'Cell',
-    enableToggle: true,
-    handler: function(b) {
-      grid.setTrackOver('cell', b.pressed);
-    }
-  }, {
-    text: 'Column',
-    enableToggle: true,
-    handler: function(b) {
-      grid.setTrackOver('column', b.pressed);
-    }
-  }, {
-    text: 'Row',
-    enableToggle: true,
-    pressed: true,
-    handler: function(b) {
-      grid.setTrackOver('row', b.pressed);
-    }
-  }],
-  tbar: [{
     type: 'segbutton',
+	multiToggle: true,
     items: [{
       text: 'Cell',
       enableToggle: true,
