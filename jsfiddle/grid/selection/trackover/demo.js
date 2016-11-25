@@ -209,25 +209,25 @@ var grid = new FancyGrid({
   trackOver: true,
   tbar: [{
     type: 'segbutton',
-	multiToggle: true,
+    multiToggle: true,
     items: [{
       text: 'Cell',
       enableToggle: true,
-      handler: function(b) {
-        grid.setTrackOver('cell', b.pressed);
+      handler: function(b){
+        grid.setTrackOver('cell', !b.pressed);
       }
-    }, {
+    },{
       text: 'Column',
       enableToggle: true,
-      handler: function(b) {
-        grid.setTrackOver('column', b.pressed);
+      handler: function(b){
+        grid.setTrackOver('column', !b.pressed);
       }
-    }, {
+    },{
       text: 'Row',
       enableToggle: true,
       pressed: true,
-      handler: function(b) {
-        grid.setTrackOver('row', b.pressed);
+      handler: function(b){
+        grid.setTrackOver('row', !b.pressed);
       }
     }]
   }],
