@@ -3,14 +3,6 @@
   margin: 0px 1px 1px 0px;
 }
 
-.fancy-theme-myGridMap .fancy-grid-cell.data {
-  cursor: pointer;
-}
-
-.fancy-theme-myGridMap .data .fancy-grid-cell-inner {
-  cursor: pointer;
-}
-
 .myGridMap .fancy-grid-cell-inner {
   margin-top: 17px;
   text-align: center;
