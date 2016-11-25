@@ -1,5 +1,5 @@
 .myGridMap .fancy-grid-cell {
-  border-color: transparent;
+  border-color: transparent !important;
   margin: 0px 1px 1px 0px;
 }
 
