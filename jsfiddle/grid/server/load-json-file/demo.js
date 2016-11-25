@@ -32,13 +32,9 @@ new FancyGrid({
     title: 'Sur Name'
   },{
     index: 'age',
+	width: 60,
     title: 'Age',
     type: 'number'
-  },{
-    index: 'education',
-    locked: true,
-    title: 'Education',
-    width: 150
   }]
 });
 
