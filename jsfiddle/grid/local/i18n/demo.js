@@ -123,7 +123,7 @@ function renderUsersGrid(title, i18n){
   gridUsers = new FancyGrid({
     title: title,
     renderTo: 'container',
-    width: 570,
+    width: 574,
     height: 400,
     data: data,
     clicksToEdit: 1,
@@ -207,7 +207,7 @@ renderUsersGrid('Deutsch', 'de');
     title: 'Choose your language',
     theme: 'i18n',
     renderTo: 'grid-i18n',
-    width: 570,
+    width: 574,
     height: 237,
     data: data,
     header: false,
