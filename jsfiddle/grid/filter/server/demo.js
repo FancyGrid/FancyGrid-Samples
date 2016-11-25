@@ -52,6 +52,7 @@ $(function() {
       }
     }, {
       index: 'age',
+	  width: 60,
       title: 'Age',
       type: 'number',
       filter: {

@@ -308,6 +308,7 @@ $(function() {
     }, {
       index: 'age',
       title: 'Age',
+	  width: 60,
       type: 'number'
     }, {
       index: 'married',
