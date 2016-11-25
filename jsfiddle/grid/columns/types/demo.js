@@ -287,6 +287,7 @@ $(function() {
       width: 40
     }, {
       index: 'company',
+	  width: 105,
       locked: true,
       title: 'Company'
     }, {
@@ -302,10 +303,12 @@ $(function() {
       data: ['USA', 'Canada', 'England']
     }, {
       index: 'age',
+	  width: 60,
       title: 'Age',
       type: 'number'
     }, {
       index: 'married',
+	  width: 70,
       title: 'Married',
       type: 'checkbox'
     }]

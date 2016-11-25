@@ -30,7 +30,7 @@ new FancyGrid({
   title: 'Array Data with fields',
   renderTo: 'container',
   renderTo: 'container',
-  width: 500,
+  width: 450,
   height: 500,
   data: {
     fields: ['name', 'surname', 'position', 'email', 'company', 'age', 'education', 'knowledge'],
@@ -42,6 +42,7 @@ new FancyGrid({
   },
   columns: [{
     index: 'company',
+	width: 105,
     title: 'Company'
   },{
     index: 'name',

@@ -40,6 +40,7 @@ new FancyGrid({
   },
   columns: [{
     index: '4',
+	width: 105,
     title: 'Company'
   },{
     index: '0',

@@ -214,7 +214,7 @@ new FancyGrid({
   },
   columns: [{
     index: 'company',
-	width: 100,
+	width: 105,
     locked: true,
     title: 'Company'
   },{

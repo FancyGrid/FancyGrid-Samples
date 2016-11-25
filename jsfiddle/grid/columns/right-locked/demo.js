@@ -215,6 +215,7 @@ new FancyGrid({
   },
   columns: [{
     index: 'company',
+	width: 105,
     locked: true,
     title: 'Company'
   },{
@@ -230,12 +231,12 @@ new FancyGrid({
     type: 'number'
   },{
     index: 'knownledge',
-    title: 'Knownledge',
-    width: 100
+    title: 'Knownledge'    
   },{
     index: 'position',
     title: 'Position',
-    width: 170,
+    width: 150,
+	ellipsis: true,
     rightLocked: true
   }]
 });

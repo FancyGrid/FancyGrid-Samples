@@ -203,7 +203,7 @@ var data = [{
 new FancyGrid({
   title: 'Locked Columns',
   renderTo: 'container',
-  width: 800,
+  width: 650,
   height: 400,
   data: data,
   defaults: {
@@ -214,6 +214,7 @@ new FancyGrid({
   },
   columns: [{
     index: 'company',
+	width: 105,
     locked: true,
     title: 'Company'
   },{
@@ -229,12 +230,11 @@ new FancyGrid({
     type: 'number'
   },{
     index: 'knownledge',
-    title: 'Knownledge',
-    width: 100
+    title: 'Knownledge'
   },{
     index: 'position',
     title: 'Position',
-    width: 100
+    ellipsis: true
   }]
 });
 
