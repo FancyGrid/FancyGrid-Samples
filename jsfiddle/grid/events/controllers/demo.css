@@ -1,7 +1,7 @@
 .sign-minus {
   color: #adb2b5;
   font-size: 23px;
-  margin-right: 7px;
+  margin-right: 7px !important;
   cursor: pointer;
   text-decoration: none;
 }
