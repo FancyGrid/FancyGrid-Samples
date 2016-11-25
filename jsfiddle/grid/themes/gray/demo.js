@@ -248,6 +248,7 @@ $(function() {
       width: 100,
       editable: true,
       sortable: true,
+	  ellipsis: true,
       resizable: true
     },
     clicksToEdit: 1,

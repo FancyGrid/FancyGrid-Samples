@@ -297,6 +297,7 @@ $(function() {
       format: 'number',
       cellAlign: 'center',
       editable: false,
+	  ellipsis: false,
       render: function(o) {
 
         o.value = '<a class="sign-minus">&ndash;</a><span class="hour-value">$' + o.value + '</span><a class="sign-plus">+</a>';

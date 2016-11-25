@@ -292,7 +292,8 @@ $(function() {
       type: 'string',
       width: 100,
       sortable: true,
-      resizable: true
+      resizable: true,
+	  ellipsis: true
     },
     columns: [{
       type: 'select',

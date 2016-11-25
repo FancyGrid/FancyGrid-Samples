@@ -50,6 +50,7 @@ var grid = new Fancy.Grid({
     },
     defaults: {
       type: 'string',
+	  ellipsis: true,
       width: 100
     },
     columns: [{

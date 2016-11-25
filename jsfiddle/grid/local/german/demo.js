@@ -221,7 +221,8 @@ new FancyGrid({
     type: 'string',
     width: 100,
     editable: true,
-    resizable: true
+    resizable: true,
+	ellipsis: true
   },
   paging: true,
   columns: [{

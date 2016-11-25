@@ -190,6 +190,7 @@ $(function() {
       width: 100,
       sortable: true,
       editable: true,
+	  ellipsis: true,
       resizable: true
     },
     clicksToEdit: 1,

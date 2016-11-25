@@ -44,6 +44,7 @@ $(function() {
     },
     defaults: {
       type: 'string',
+	  ellipsis: true,
       width: 100
     },
     columns: [{

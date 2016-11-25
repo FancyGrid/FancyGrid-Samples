@@ -163,6 +163,7 @@ $(function() {
       type: 'string',
       sortable: true,
       resizable: true,
+	  ellipsis: true,
       editable: true
     },
     clicksToEdit: 1,

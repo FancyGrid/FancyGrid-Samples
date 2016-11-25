@@ -235,7 +235,8 @@ var grid = new FancyGrid({
     type: 'string',
     width: 100,
     sortable: true,
-    resizable: true
+    resizable: true,
+	ellipsis: true
   },
   columns: [{
     index: 'id',

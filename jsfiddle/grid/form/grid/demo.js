@@ -204,6 +204,7 @@ $(function() {
       sortable: true,
       resizable: true,
       editable: true,
+	  ellipsis: true,
       vtype: 'notempty'
     },
     events: [{
