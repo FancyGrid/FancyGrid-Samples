@@ -49,6 +49,7 @@ new FancyGrid({
     title: 'Sur Name'
   },{
     index: '5',
+	width: 60,
     title: 'Age',
     type: 'number'
   }]
