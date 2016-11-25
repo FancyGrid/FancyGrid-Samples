@@ -181,7 +181,7 @@ $(function() {
   new FancyGrid({
     title: 'Resizable',
     renderTo: 'container',
-    width: 600,
+    width: 450,
     height: 400,
     data: data,
     resizable: true,
