@@ -27,7 +27,8 @@ new FancyGrid({
     width: 100,
     editable: true,
     sortable: true,
-    resizable: true
+    resizable: true,
+	ellipsis: true
   },
   paging: true,
   clicksToEdit: 1,

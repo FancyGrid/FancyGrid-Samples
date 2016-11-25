@@ -292,6 +292,7 @@ $(function() {
       width: 40
     }, {
       index: 'company',
+	  width: 105,
       locked: true,
       title: 'Company'
     }, {
@@ -312,6 +313,7 @@ $(function() {
       type: 'number'
     }, {
       index: 'married',
+	  width: 70,
       title: 'Married',
       type: 'checkbox'
     }]

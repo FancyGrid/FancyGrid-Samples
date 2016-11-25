@@ -6,7 +6,7 @@ $(function() {
 new FancyGrid({
   title: 'Load JSON file',
   renderTo: 'container',
-  width: 700,
+  width: 500,
   height: 400,
   theme: 'blue',
   data: {
@@ -22,6 +22,7 @@ new FancyGrid({
   },
   columns: [{
     index: 'company',
+	width: 105,
     locked: true,
     title: 'Company'
   },{

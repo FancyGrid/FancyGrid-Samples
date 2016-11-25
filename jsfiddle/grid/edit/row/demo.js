@@ -220,8 +220,7 @@ var data = [{
   country: 'Canada'
 }];
 
-$(function() {
-
+$(function(){
 
   new FancyGrid({
     title: 'Row edit',
@@ -234,7 +233,8 @@ $(function() {
       width: 100,
       editable: true,
       sortable: true,
-      resizable: true
+      resizable: true,
+	  ellipsis: true
     },
     clicksToEdit: 1,
     rowEdit: true,

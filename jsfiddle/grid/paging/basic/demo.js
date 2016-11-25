@@ -248,6 +248,7 @@ $(function() {
       width: 40
     }, {
       index: 'company',
+	  width: 105,
       locked: true,
       title: 'Company'
     }, {

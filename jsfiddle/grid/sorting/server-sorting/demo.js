@@ -40,6 +40,7 @@ $(function() {
     type: 'number'
   },{
     index: 'position',
+	ellipsis: true,
     locked: true,
     title: 'Position',
     width: 150

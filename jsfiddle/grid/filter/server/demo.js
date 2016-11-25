@@ -30,6 +30,7 @@ $(function() {
       type: 'number'
     }, {
       index: 'company',
+	  width: 105,
       title: 'Company',
       locked: true,
       filter: {
@@ -71,6 +72,7 @@ $(function() {
     }, {
       index: 'position',
       title: 'Position',
+	  ellipsis: true,
       rightLocked: true,
       width: 120
     }]

@@ -35,7 +35,8 @@ var grid = new FancyGrid({
     sortable: true,
     resizable: true,    
     editable: true,
-    vtype: 'notempty'
+    vtype: 'notempty',
+	ellipsis: true
   },
   events: [{
     cellclick: function(grid, o){

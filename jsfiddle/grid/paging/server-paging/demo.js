@@ -41,6 +41,7 @@ $(function() {
   },{
     index: 'position',
     locked: true,
+	ellipsis: true,
     title: 'Position',
     width: 150
   }]
