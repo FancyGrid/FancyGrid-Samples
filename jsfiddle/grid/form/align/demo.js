@@ -122,7 +122,7 @@ $(function() {
     renderTo: 'form2',
     title: 'labelAlign - top',
     width: 350,
-    height: 400,
+    height: 510,
     defaults: {
       type: 'string',
       labelAlign: 'top'
