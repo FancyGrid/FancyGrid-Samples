@@ -236,6 +236,7 @@ new FancyGrid({
     title: 'Nachname'
   },{
     index: 'age',
+	width: 60,
     title: 'Alter',
     type: 'number'
   }]
