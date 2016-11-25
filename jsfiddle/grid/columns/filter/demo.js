@@ -307,6 +307,7 @@ $(function() {
       data: ['USA', 'Canada', 'England']
     }, {
       index: 'age',
+	  width: 60,
       title: 'Age',
       type: 'number'
     }, {
