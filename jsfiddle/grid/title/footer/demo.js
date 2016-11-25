@@ -125,7 +125,6 @@ $(function() {
     data: data,
     trackOver: true,
     selModel: 'row',
-    titleHeight: 33,
     footer: {
       status: '<span style="position: relative;top: 3px;">*</span> - Devices online per 100 inhabitants in 2015',
       source: {
