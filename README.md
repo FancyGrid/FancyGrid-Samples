@@ -1,5 +1,5 @@
 
 # FancyGrid Samples
 
-Current version contains only JSFiddle samples.
+JSFiddle samples and php(server side code) samples.
 
