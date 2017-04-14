@@ -54,9 +54,7 @@ $(function() {
     width: 'fit',
     height: 'fit',
     trackOver: true,
-    selection: {
-      row: true
-    },
+    selModel: 'row',
     data: {
       items: data
     },
