@@ -60,9 +60,7 @@ $(function() {
     theme: 'kia',
     height: 350,
     trackOver: true,
-    selection: {
-      row: true
-    },
+    selModel: 'row',
     data: {
       items: data
     },
