@@ -7,9 +7,9 @@ new FancyForm({
   height: 300,
   items: [{
     type: 'combo',
-	multiSelect: true,
+    multiSelect: true,
     label: 'MultiSelect',
-	data: [
+    data: [
       {index: 'us', country: 'USA'},
       {index: 'ca', country: 'Canada'},
       {index: 'br', country: 'Brazil'}
@@ -19,10 +19,10 @@ new FancyForm({
     value: ['us', 'br']
   },{
     type: 'combo',
-	multiSelect: true,
-	itemCheckBox: true,
+    multiSelect: true,
+    itemCheckBox: true,
     label: 'CheckBoxes',
-	data: [
+    data: [
       {index: 'us', country: 'USA'},
       {index: 'ca', country: 'Canada'},
       {index: 'br', country: 'Brazil'}
