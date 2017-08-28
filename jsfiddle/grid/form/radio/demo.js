@@ -20,9 +20,6 @@ $(function() {
       }, {
         text: 'Land Rover',
         value: 'lr'
-      }, {
-        text: 'Toyota',
-        value: 'toyota'
       }]
     }, {
       type: 'radio',
