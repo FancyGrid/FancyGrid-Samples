@@ -152,11 +152,20 @@ new FancyForm({
       text: 'None',
       value: 'none'
     }, {
-      text: 'Honda',
-      value: 'honda'
+       text: 'KIA',
+        value: 'kia'
     }, {
-      text: 'Land Rover',
-      value: 'lr'
+       text: 'Honda',
+       value: 'honda'
+    }, {
+       text: 'Land Rover',
+       value: 'lr'
+	}, {
+       text: 'Toyota',
+       value: 'toyota'
+	}, {
+       text: 'BMW',
+       value: 'bmw'
     }]
   }, {
     label: 'Military',
