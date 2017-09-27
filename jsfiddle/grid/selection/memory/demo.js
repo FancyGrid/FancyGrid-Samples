@@ -291,6 +291,7 @@ $(function() {
 	  type: 'rows',
 	  memory: true
 	},
+	paging: true,
     defaults: {
       type: 'string',
       width: 100,
