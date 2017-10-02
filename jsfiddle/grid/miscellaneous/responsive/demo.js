@@ -51,7 +51,7 @@ $(function() {
 
   new FancyGrid({
     title: {
-      text: '<img src="http://fancygrid.com/img/kia.png" alt="KIA MOTORS" style="height: 24px;position: relative;top: -4px;"> <span style="color:#bb162b;position: relative;top: -10px;font-size: 20px;left: 4px;"> Kia Motors USA sales - 2015</span>',
+      text: '<img src="https://fancygrid.com/img/kia.png" alt="KIA MOTORS" style="height: 24px;position: relative;top: -4px;"> <span style="color:#bb162b;position: relative;top: -10px;font-size: 20px;left: 4px;"> Kia Motors USA sales - 2015</span>',
       style: {
         height: 45
       }
