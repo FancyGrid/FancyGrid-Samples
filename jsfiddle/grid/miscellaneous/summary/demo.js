@@ -20,7 +20,7 @@ $(function(){
     },
     renderTo: 'grid',
     theme: 'gray',
-    width: 'fit',
+    width: 450,
     height: 'fit',
     trackOver: true,
     selModel: 'row',
