@@ -1,5 +1,5 @@
 var data = [{
-  id: '',
+  id: ' ',
   name: 'Total',
   year2015: [38299, 44030, 58771, 53282, 62433, 54137, 56311, 58897, 49820, 50044, 45553, 54241]
 }, {
@@ -44,7 +44,10 @@ $(function() {
   FancyGrid.defineTheme('kia', {
     extend: 'default',
     config: {
-      panelBorderWidth: 1,
+      panelBorderWidth: 0,
+      gridBorders: [0,0,0,0],
+      gridWithoutPanelBorders: [1,1,1,1],
+      panelBodyBorders: [0,0,0,0],
       titleHeight: 45
     }
   });
