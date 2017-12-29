@@ -307,8 +307,14 @@ $(function() {
       type: 'number'
     }, {
       index: 'married',
+	  width: 70,
       title: 'Married',
       type: 'checkbox'
+	}, {
+      index: 'married',
+      width: 60,
+      title: 'Married',
+      type: 'switcher'
     }]
   });
 });
