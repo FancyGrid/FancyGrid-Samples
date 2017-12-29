@@ -1,6 +1,7 @@
 .fancy-theme-myGridMap .fancy-grid-cell{
   border-color: transparent;
   margin: 0px 1px 1px 0px;
+  border-radius: 30px;
 }
 
 .fancy-theme-myGridMap .fancy-grid-cell-inner {
