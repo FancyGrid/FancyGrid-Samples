@@ -1,9 +1,3 @@
-.photo img {
-  width: 80px;
-  margin-top: -5px;
-  margin-left: -10px;
-}
-
 .id-column-cls .fancy-grid-cell-inner {
   margin-left: 14px;
   font-size: 14px;
@@ -15,10 +9,6 @@
   background-color: rgb(240, 242, 244);
   background: #ececec url(http://fancygrid.com/img/a_bg.png) 0 -1px repeat-x !important;
   border-color: #ccc;
-}
-
-.column-percent .fancy-grid-cell-inner {
-  font-weight: bold;
 }
 
 .fancy-theme-kia .fancy-panel {
@@ -83,7 +73,7 @@
   margin-top: 6px;
 }
 
-#mc {
+body {
   background: #f9f9f9 url(http://fancygrid.com/img/bg_body.gif) 0 0 repeat;
 }
 
