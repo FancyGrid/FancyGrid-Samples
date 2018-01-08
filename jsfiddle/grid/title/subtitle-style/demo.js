@@ -35,7 +35,6 @@ $(function() {
         'text-align': 'center'
       }
     },
-    subTitle: 'Sub Title',
     renderTo: 'container',
     width: 450,
     height: 400,
