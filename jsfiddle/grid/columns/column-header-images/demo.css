@@ -1,0 +1,16 @@
+.column-car-image img {
+  margin-top: -9px;
+  border-radius: 2px;
+}
+
+.column-car-image .fancy-grid-cell-inner {
+  margin-top: 9px;
+}
+
+.color-column .fancy-grid-cell-inner div {
+  margin-left: 9px;
+}
+
+.fancy-theme-gray.fancy-panel .fancy-panel-header {
+  border-bottom: 2px solid #e3223a;
+}
