@@ -1,5 +1,5 @@
 .fancy-grid-cell{
-  border-color: transparent;
+  border-color: transparent !important;
 }
 
 .fancy-grid-cell.data {
@@ -34,5 +34,5 @@
 }
 
 .fancy-grid-body {
-  background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
 }
