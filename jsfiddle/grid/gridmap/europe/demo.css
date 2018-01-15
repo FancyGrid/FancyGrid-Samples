@@ -1,0 +1,38 @@
+.fancy-grid-cell{
+  border-color: transparent;
+}
+
+.fancy-grid-cell.data {
+  cursor: pointer;
+  border-radius: 30px;
+  opacity: 0.8;
+}
+
+.fancy-grid-cell.data:hover {
+  opacity: 0.8;
+}
+
+.data .fancy-grid-cell-inner {
+  cursor: pointer;
+}
+
+.fancy-grid-cell-inner {
+  margin-top: 17px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #D7EDF6;
+}
+
+.fancy-panel-grid-inside {
+  border-width: 0px;
+}
+
+.fancy-panel .fancy-panel-header {
+  background-color: #626262;
+  color: #F3F3F3;
+}
+
+.fancy-grid-body {
+  background-color: #f9f9f9;
+}
