@@ -25,11 +25,11 @@
 }
 
 .fancy-panel-grid-inside {
-  border-width: 0px;
+  border-width: 0px !important;
 }
 
 .fancy-panel .fancy-panel-header {
-  background-color: #626262;
+  background-color: #626262 !important;
   color: #F3F3F3;
 }
 
