@@ -55,7 +55,7 @@ new FancyForm({
   renderTo: 'container',
   title: 'User Data',
   width: 330,
-  height: 730,
+  height: 750,
   labelWidth: 80,
   defaults: {
     type: 'string'
