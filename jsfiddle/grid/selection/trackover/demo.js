@@ -198,7 +198,7 @@ var data = [{
   knownledge: ''
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
 var grid = new FancyGrid({
   renderTo: 'container',

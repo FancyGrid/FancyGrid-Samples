@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
   
   var comboData = [{
     index: 0,

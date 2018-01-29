@@ -15,7 +15,7 @@ var data = [
   {name: 'Adrian', surname: 'Russell', email: 'adrian.russell@gmail.com', company: 'Micro Systems', age: 31}
 ];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
  
 new FancyGrid({
   title: 'Validation',

@@ -115,7 +115,7 @@ var data = [{
   online: 0.6
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
 
   new FancyGrid({

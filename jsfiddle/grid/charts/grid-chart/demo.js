@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
   $('#column').highcharts({
     tooltip: {
       followPointer: true,

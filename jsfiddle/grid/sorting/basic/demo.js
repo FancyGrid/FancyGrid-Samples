@@ -199,7 +199,7 @@ var data = [{
 }];
 
 
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
 
 new FancyGrid({
   title: 'Sorting',

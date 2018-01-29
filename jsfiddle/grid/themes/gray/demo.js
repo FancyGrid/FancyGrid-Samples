@@ -222,7 +222,7 @@ var data = [{
 }];
 
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   new FancyGrid({
     theme: 'gray',

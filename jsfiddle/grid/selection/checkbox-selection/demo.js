@@ -279,7 +279,7 @@ var data = [{
   knownledge: 'C/C++, Unix'
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   var grid = new FancyGrid({
     renderTo: 'container',

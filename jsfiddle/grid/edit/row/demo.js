@@ -220,7 +220,7 @@ var data = [{
   country: 'Canada'
 }];
 
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
 
   new FancyGrid({
     title: 'Row edit',

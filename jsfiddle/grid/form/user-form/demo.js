@@ -1,4 +1,4 @@
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
 
 function salaryInputFn(value) {
   value = value.toString().replace('$', '').replace(/\,/g, '').replace('-', '').replace('.', '');

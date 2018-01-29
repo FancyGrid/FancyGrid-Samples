@@ -2,7 +2,7 @@
   This sample does not work in jsfiddle because server data.
 */
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
  new FancyGrid({
   title: 'Server Paging and Sorting',
   renderTo: 'container',

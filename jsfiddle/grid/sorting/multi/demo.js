@@ -132,7 +132,7 @@ var data = [{
   age: 32
 }];
 
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
 
   new FancyGrid({
     title: 'Multi Sorting',

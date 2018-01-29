@@ -2,7 +2,7 @@
   This sample will not work on jsfiddle because server data.
 */
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 new FancyGrid({
   title: 'Load JSON file',
   renderTo: 'container',

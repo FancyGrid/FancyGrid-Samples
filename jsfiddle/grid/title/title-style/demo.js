@@ -23,7 +23,7 @@ var data = [
   ['Orlando', 'Ruiz', 'Unit Testing Developer', 'orlando.ruiz@gmail.com', 'Apple', 32, '']
 ];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   new Fancy.Grid({
     title: {

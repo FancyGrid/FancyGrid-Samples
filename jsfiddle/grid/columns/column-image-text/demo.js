@@ -42,7 +42,7 @@ var data = [{
   total: 42
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
   new FancyGrid({
     title: 'Funny dream team',
     renderTo: 'container',

@@ -1,4 +1,4 @@
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
   var data = [
     { data1: [-2,3,4,1,0,-5], data2: [1,2,3,4,5]},
     { data1: [5,3,1,2,1,7], data2: [3,1,2,4,1]},

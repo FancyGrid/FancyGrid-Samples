@@ -10,7 +10,7 @@ var data = [
   {id: 9, name: 'Soul', year2015: [8142, 9965, 12731, 11418, 13886, 11844, 13975, 17108, 13614, 12246, 10045, 12159]},
 ];
 
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
   new FancyGrid({
     title: {
       text: '<img src="http://fancygrid.com/img/kia.png" alt="KIA MOTORS" style="height: 24px;position: relative;top: -4px;"> <span style="color:#bb162b;position: relative;top: -10px;font-size: 20px;left: 4px;"> Kia Motors USA sales - 2015</span>',

@@ -40,7 +40,7 @@ var data = [{
   year2015: [8142, 9965, 12731, 11418, 13886, 11844, 13975, 17108, 13614, 12246, 10045, 12159]
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   new FancyGrid({
     title: {

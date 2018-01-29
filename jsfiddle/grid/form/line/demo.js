@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   var cardData = [
     {index: 0, card: ''},

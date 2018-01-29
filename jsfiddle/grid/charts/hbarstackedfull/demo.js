@@ -1,4 +1,4 @@
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
   var data = [{
     year: 2006,
     toyota: 6800228,

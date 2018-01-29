@@ -176,7 +176,7 @@ var data = [{
   "birthday": "1995.2.5"
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
 
   Fancy.defineTheme('staff', {

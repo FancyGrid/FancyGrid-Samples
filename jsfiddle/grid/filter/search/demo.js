@@ -264,7 +264,7 @@ var data = [{
   country: 'England'
 }];
 
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
 
   new FancyGrid({
     title: 'Column Types',

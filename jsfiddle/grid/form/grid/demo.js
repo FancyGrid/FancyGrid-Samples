@@ -188,7 +188,7 @@
     about: 'Just married.'
   }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   var grid = new FancyGrid({
     title: 'Employee',

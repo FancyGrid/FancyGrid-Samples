@@ -18,7 +18,7 @@ var data = [
   {id: 17, name: 'Peter', surname: 'West', email: 'peter.west@fancygrid.com', position: 'PHP/HTML Developer', country: 'England', birthday: '9/6/1977', hour: 30, active: true, about: 'Just married.'}
 ];
 
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
 
 
 var grid = new FancyGrid({

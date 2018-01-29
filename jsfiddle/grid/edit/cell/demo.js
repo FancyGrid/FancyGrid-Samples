@@ -148,7 +148,7 @@ var data = [{
   "birthday": "1995.02.05"
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   new FancyGrid({
     resizable: true,

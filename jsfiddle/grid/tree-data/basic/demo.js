@@ -131,7 +131,7 @@ var data = [{
   }]
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   new FancyGrid({
 	title: 'Tree Grid: Region - Country - City',

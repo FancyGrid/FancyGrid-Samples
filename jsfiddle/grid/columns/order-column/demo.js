@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
   var data = [{
     id: 1,
     name: 'Ted',

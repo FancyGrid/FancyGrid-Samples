@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 	
 var COLORS = [
   '#cd2a27',

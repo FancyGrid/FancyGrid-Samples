@@ -220,7 +220,7 @@ var data = [{
   knownledge: ''
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
   new FancyGrid({
     renderTo: 'container',
     title: '<img src="http://fancygrid.com/img/logo_2.png" style="height:30px;position: relative;top:-7px;">',

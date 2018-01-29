@@ -972,7 +972,7 @@ var data = [{
   "genre": "man"
 }];
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   var stringFilterFn = function(field, value, oldValue) {
     if (field.interval) {

@@ -157,7 +157,7 @@ function zipInputFn(value) {
   return value;
 }
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
 
   new FancyForm({
     renderTo: 'container',

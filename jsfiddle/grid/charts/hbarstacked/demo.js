@@ -1,4 +1,4 @@
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
   var data = [
     {country: 'Venezuela', 0: 28, 1: 100, 2: 100},
     {country: 'Turkey', 0: 78, 1: 80, 2: 61},

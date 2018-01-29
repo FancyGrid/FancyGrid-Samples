@@ -1,4 +1,4 @@
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
   $('#spline').highcharts({
     tooltip: {
       followPointer: true
