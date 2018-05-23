@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
       index: 'id',
       width: 40,
       sortable: true,
-	  locked: true,
+      locked: true,
       cls: 'id-column-cls'
     }, {
       type: 'image',
